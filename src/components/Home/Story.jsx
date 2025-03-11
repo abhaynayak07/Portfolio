@@ -26,16 +26,13 @@ function Story() {
             <p>A Film by Abhay Nayak</p>
           </section>
         </div>
-        <div className="project-journey">
-          <h3>Aarbhata</h3>
-          <p>
-            ‘Aarbhata' is a short documentary about a native tiger dance,
-            capturing deep faith and belief behind the sacred ritual where
-            participants symbolically embody tigers through body painting for a
-            dedicated two-day worship honoring Lord Shri Krishna in Udupi
-            (Karnataka, India)
-          </p>
-        </div>
+        <p className="home-story-para">
+          ‘Aarbhata' is a short documentary about a native tiger dance,
+          capturing deep faith and belief behind the sacred ritual where
+          participants symbolically embody tigers through body painting for a
+          dedicated two-day worship honoring Lord Shri Krishna in Udupi
+          (Karnataka, India)
+        </p>
         <div className="home-story-img">
           <section>
             <img src={Img1} />
