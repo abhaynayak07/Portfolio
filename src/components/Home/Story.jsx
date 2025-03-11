@@ -19,7 +19,13 @@ function Story() {
         </p>
       </div>
       <div className="home-story-container">
-        <video src={Trailer} muted autoPlay loop />
+        <div className="home-story-video">
+          <video src={Trailer} muted autoPlay loop />
+          <section>
+            <h3>Aarbhata</h3>
+            <p>A Film by Abhay Nayak</p>
+          </section>
+        </div>
         <div className="project-journey">
           <h3>Aarbhata</h3>
           <p>
