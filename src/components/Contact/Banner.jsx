@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DesktopBackground from "../../assets/Contact/Banner/Desktop Banner Background.png";
+import MobileBackground from "../../assets/Contact/Banner/Mobile Banner Background.png";
 import OpenToWork from "../OpenToWork";
 
 function Banner() {
@@ -17,8 +18,13 @@ function Banner() {
   return (
     <div className="home-banner project-banner">
       <img
-        className="home-banner-background"
+        className="home-banner-background desktop"
         src={DesktopBackground}
+        alt="Background"
+      />
+      <img
+        className="home-banner-background mobile"
+        src={MobileBackground}
         alt="Background"
       />
       <div className="home-banner-container">
@@ -28,13 +34,13 @@ function Banner() {
             <p>Contact</p>
             <div className="home-banner-scroll-text">
               <h1>
-                Lets Connect &<span>{words[currentWordIndex]}</span>
+                Lets <br className="mobile" /> Connect &<span>{words[currentWordIndex]}</span>
               </h1>
             </div>
           </section>
           <p>
             Got an idea? Reach out, and let’s bring your vision to life with{" "}
-            <br /> creativity and purpose.
+            <br className="desktop" /> creativity and purpose.
           </p>
         </div>
       </div>

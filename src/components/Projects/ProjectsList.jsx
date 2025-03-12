@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DesktopBackground from "../../assets/Projects/ProjectsList/Desktop Background.png";
+import MobileBackground from "../../assets/Projects/ProjectsList/Mobile Background.png";
 import GoogleClassroom from "../../assets/Projects/ProjectsList/Google Classroom.png";
 import GoogleClassroomBackgroundGlow from "../../assets/Projects/ProjectsList/Google Classroom Background Glow.png";
 import RentMyRide from "../../assets/Projects/ProjectsList/Rent My Ride.png";
@@ -26,12 +27,19 @@ function Projects() {
   return (
     <div className="projects">
       <div className="projects-heading">
-        <img className="projects-heading-background" src={DesktopBackground} />
+        <img
+          className="projects-heading-background desktop"
+          src={DesktopBackground}
+        />
+        <img
+          className="projects-heading-background mobile"
+          src={MobileBackground}
+        />
         <div className="projects-heading-text">
           <h2>All Projects</h2>
           <p>
-            We create stunning, user-centric websites that inspire and <br />{" "}
-            engage.
+            We create stunning, user-centric websites <br className="mobile" /> that inspire and{" "}
+            <br className="desktop" /> engage.
           </p>
         </div>
       </div>
