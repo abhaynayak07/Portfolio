@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
+import { Link } from "react-router-dom";
 import icon from "../../../assets/Projects/Page/Google Classroom/icon.png";
 import banner from "../../../assets/Projects/Page/Google Classroom/banner.png";
+import mobilebanner from "../../../assets/Projects/Page/Google Classroom/mobile banner.png";
 import toolused from "../../../assets/Projects/Page/Google Classroom/tool used.png";
 import overviewimg from "../../../assets/Projects/Page/Google Classroom/overview img.png";
 import secondbanner from "../../../assets/Projects/Page/Google Classroom/second banner.png";
+import mobilesecondbanner from "../../../assets/Projects/Page/Google Classroom/mobile second banner.png";
 import thirdbanner1 from "../../../assets/Projects/Page/Google Classroom/third banner 1.png";
 import thirdbanner2 from "../../../assets/Projects/Page/Google Classroom/third banner 2.png";
 import bento11 from "../../../assets/Projects/Page/Google Classroom/bento 1.1.png";
@@ -19,6 +22,12 @@ import bento25 from "../../../assets/Projects/Page/Google Classroom/bento 2.5.pn
 import bento26 from "../../../assets/Projects/Page/Google Classroom/bento 2.6.png";
 
 function GoogleClassroom() {
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleShowMore = () => {
+    setShowMore((prev) => !prev);
+  };
+
   return (
     <div className="pages-container">
       <div className="about-project">
@@ -39,7 +48,16 @@ function GoogleClassroom() {
             </div>
           </div>
           <div className="project-header-banner">
-            <img src={banner} alt="Google Classroom Banner" />
+            <img
+              src={banner}
+              className="desktop"
+              alt="Google Classroom Banner"
+            />
+            <img
+              src={mobilebanner}
+              className="mobile"
+              alt="Google Classroom Banner"
+            />
           </div>
         </div>
         <div className="project-sections-container">
@@ -91,11 +109,12 @@ function GoogleClassroom() {
             </div>
           </div>
           <div className="project-second-banner">
-            <img src={secondbanner} />
+            <img src={secondbanner} className="desktop" />
+            <img src={mobilesecondbanner} className="mobile" />
           </div>
           <div className="project-points-container">
             <h3>Problem Statement</h3>
-            <ul className="project-points-div">
+            <ul className="project-points-div desktop">
               <li className="project-points">
                 Do not get to know about the due date of assignments.
               </li>
@@ -131,7 +150,49 @@ function GoogleClassroom() {
                 the assignment due or class test.
               </li>
             </ul>
+            <ul className="project-points-div mobile">
+      <li className="project-points">
+        Do not get to know about the due date of assignments.
+      </li>
+      <li className="project-points">
+        No notification bell/icon to notify about the due date of assignments or the class tests.
+      </li>
+      <li className="project-points">No navigation bar or search button.</li>
+
+      {!showMore && (
+        <button className="primary-button" onClick={toggleShowMore}>
+          See More
+        </button>
+      )}
+
+      {showMore && (
+        <>
+          <li className="project-points">
+            Less interactive to those students who are physically challenged with no voice control.
+          </li>
+          <li className="project-points">
+            Virtual classes create a gap where students hesitate to clear doubts with teachers.
+          </li>
+          <li className="project-points">
+            Some students may lack a Google account or use a parent's, altering their usernames.
+          </li>
+          <li className="project-points">
+            Having multiple teachers for the same subject can confuse students about assignments and notes.
+          </li>
+          <li className="project-points">
+            There is no seriousness among students when the assignment is submitted virtually.
+          </li>
+          <li className="project-points">
+            It becomes difficult for the students to remember the dates for the assignment due or class test.
+          </li>
+          <button className="primary-button" onClick={toggleShowMore}>
+            See Less
+          </button>
+        </>
+      )}
+    </ul>
           </div>
+
           <div className="project-points-container">
             <h3>Goals</h3>
             <ul className="project-points-div">

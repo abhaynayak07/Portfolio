@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Resume from "/Abhay Nayak's CV.pdf";
 import Menu from "../assets/Navbar/menu.png";
 import MenuCancel from "../assets/Navbar/menu cancel.png";
 import Arrow from "../assets/Navbar/arrow.png";
@@ -30,7 +31,7 @@ function Navbar() {
           <Link to="/projects" className="primary-button">
             Projects
           </Link>
-          <a href="#" className="primary-button">
+          <a href={Resume} target="_blank" className="primary-button">
             Resume
           </a>
           <Link to="/contact" className="secondary-button">
