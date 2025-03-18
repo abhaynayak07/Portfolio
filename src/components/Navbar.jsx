@@ -69,7 +69,7 @@ function Navbar() {
             <p>Projects</p>
             <img src={Arrow} />
           </Link>
-          <a to="projects" onClick={toggleMobileNav}>
+          <a href={Resume} target="_blank" onClick={toggleMobileNav}>
             <p>Resume</p>
             <img src={Arrow} />
           </a>

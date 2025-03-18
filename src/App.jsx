@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import GoogleClassroom from "./components/Projects/Pages/GoogleClassroom";
+import RentMyRide from "./components/Projects/Pages/RentMyRide";
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
           <Route
             path="projects/google_classroom"
             element={<GoogleClassroom />}
+          />
+            <Route
+            path="projects/rent_my_ride"
+            element={<RentMyRide />}
           />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
