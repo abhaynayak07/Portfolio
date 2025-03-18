@@ -38,7 +38,7 @@ function KiteByZerodha() {
               <img
                 src={icon}
                 style={{
-                  boxShadow: " 0px 2px 45px 0px rgba(25, 161, 95, 0.45)",
+                  boxShadow: " 0px 2px 45px 0px rgba(246, 70, 26, 0.45)",
                 }}
                 alt="Kite By Zerodha Icon"
               />
