@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import GoogleClassroom from "./components/Projects/Pages/GoogleClassroom";
 import RentMyRide from "./components/Projects/Pages/RentMyRide";
+import KiteByZerodha from "./components/Projects/Pages/KiteByZerodha";
 
 function App() {
   return (
@@ -22,10 +23,8 @@ function App() {
             path="projects/google_classroom"
             element={<GoogleClassroom />}
           />
-            <Route
-            path="projects/rent_my_ride"
-            element={<RentMyRide />}
-          />
+          <Route path="projects/rent_my_ride" element={<RentMyRide />} />
+          <Route path="projects/kite_by_zerodha" element={<KiteByZerodha />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Route>

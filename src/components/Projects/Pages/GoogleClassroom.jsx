@@ -1,5 +1,4 @@
 import React,{useState} from "react";
-import { Link } from "react-router-dom";
 import icon from "../../../assets/Projects/Page/Google Classroom/icon.png";
 import banner from "../../../assets/Projects/Page/Google Classroom/banner.png";
 import mobilebanner from "../../../assets/Projects/Page/Google Classroom/mobile banner.png";
