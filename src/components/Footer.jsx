@@ -21,7 +21,10 @@ function Footer() {
             Let’s <br /> <span>Collaborate</span>
           </h2>
           <nav>
-            <a href="#">
+            <a
+              target="_blank"
+              href="https://mail.google.com/mail/?view=cm&to=abhaynk0307@gmail.com"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -35,7 +38,7 @@ function Footer() {
                 />
               </svg>
             </a>
-            <a href="#">
+            <a target="_blank" href="https://www.behance.net/abhaynayakk">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -49,7 +52,7 @@ function Footer() {
                 />
               </svg>
             </a>
-            <a href="#">
+            <a href="https://x.com/abhaynayakk07" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -63,7 +66,7 @@ function Footer() {
                 />
               </svg>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/nayak.abhayy/" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

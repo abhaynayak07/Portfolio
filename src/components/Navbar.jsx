@@ -84,7 +84,11 @@ function Navbar() {
           </Link>
           <div className="mobile-nav-down-container">
             <div className="socials">
-              <a href="#">
+              <a
+                href="https://mail.google.com/mail/?view=cm&to=abhaynk0307@gmail.com"
+                target="_blank"
+                onClick={toggleMobileNav}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -98,7 +102,11 @@ function Navbar() {
                   />
                 </svg>
               </a>
-              <a href="#">
+              <a
+                href="https://www.behance.net/abhaynayakk"
+                target="_blank"
+                onClick={toggleMobileNav}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -112,7 +120,11 @@ function Navbar() {
                   />
                 </svg>
               </a>
-              <a href="#">
+              <a
+                href="https://x.com/abhaynayakk07"
+                target="_blank"
+                onClick={toggleMobileNav}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -126,7 +138,11 @@ function Navbar() {
                   />
                 </svg>
               </a>
-              <a href="#">
+              <a
+                href="https://www.instagram.com/nayak.abhayy/"
+                target="_blank"
+                onClick={toggleMobileNav}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -143,6 +159,7 @@ function Navbar() {
               <a
                 href="https://www.linkedin.com/in/abhay-nayak-k-187b42198/"
                 target="_blank"
+                onClick={toggleMobileNav}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
