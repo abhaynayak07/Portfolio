@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Trailer from "../../assets/Home/Story/Teaser.mp4";
 import Img1 from "../../assets/Home/Story/Img1.png";
 import Img2 from "../../assets/Home/Story/Img2.png";
@@ -10,6 +10,32 @@ import Img3Mobile from "../../assets/Home/Story/Img3 Mobile.png";
 import Img4Mobile from "../../assets/Home/Story/Img4 Mobile.png";
 
 function Story() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    if (!videoElement) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          videoElement.currentTime = 0; 
+          videoElement.play();
+        } else {
+          videoElement.pause();
+          videoElement.currentTime = 0; 
+        }
+      },
+      { threshold: 0.1 } 
+    );
+
+    observer.observe(videoElement);
+
+    return () => {
+      observer.unobserve(videoElement);
+    };
+  }, []);
+
   return (
     <div className="home-story">
       <div className="heading">
@@ -24,7 +50,7 @@ function Story() {
       </div>
       <div className="home-story-container">
         <div className="home-story-video">
-          <video src={Trailer} muted autoPlay loop />
+          <video ref={videoRef} src={Trailer} muted loop />
           <section>
             <h3>Aarbhata</h3>
             <p>A Film by Abhay Nayak</p>
