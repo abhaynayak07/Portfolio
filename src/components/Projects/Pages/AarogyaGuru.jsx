@@ -39,7 +39,7 @@ function AarogyaGuru() {
                 style={{
                   boxShadow: " 0px 2px 45px 0px rgba(115, 49, 255, 0.45)",
                 }}
-                alt="Google Classroom Icon"
+                alt="Aarogya Guru Icon"
               />
             </div>
             <div className="project-header-text">
@@ -51,12 +51,12 @@ function AarogyaGuru() {
             <img
               src={banner}
               className="desktop"
-              alt="Google Classroom Banner"
+              alt="Aarogya Guru Banner"
             />
             <img
               src={mobilebanner}
               className="mobile"
-              alt="Google Classroom Banner"
+              alt="Aarogya Guru Banner"
             />
           </div>
         </div>

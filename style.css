@@ -1388,6 +1388,9 @@ form button:hover {
 .react-tel-input {
   width: 100%;
 }
+.react-tel-input .special-label{
+  display: none;
+}
 
 .input-container .react-tel-input .form-control {
   color: #ccc;

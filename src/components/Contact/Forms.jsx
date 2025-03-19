@@ -40,7 +40,7 @@ function Forms() {
           />
         </div>
         <div className="input-container">
-          <label>Phone Number</label>
+          <label style={{ fontFamily: "Urbanist" }}>Phone Number</label>
           <PhoneInput
             country={"in"}
             value={phone}
