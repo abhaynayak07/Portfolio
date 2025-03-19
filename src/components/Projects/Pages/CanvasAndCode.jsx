@@ -1,10 +1,13 @@
 import React from "react";
 import icon from "../../../assets/Projects/Page/Canvas And Code/icon.png";
 import banner from "../../../assets/Projects/Page/Canvas And Code/banner.png";
+import mobilebanner from "../../../assets/Projects/Page/Canvas And Code/mobile banner.png";
 import toolused from "../../../assets/Projects/Page/Canvas And Code/tool used.png";
 import overviewimg from "../../../assets/Projects/Page/Canvas And Code/overview img.png";
 import secondbanner from "../../../assets/Projects/Page/Canvas And Code/second banner.png";
+import mobilesecondbanner from "../../../assets/Projects/Page/Canvas And Code/mobile second banner.png";
 import thirdbanner1 from "../../../assets/Projects/Page/Canvas And Code/third banner 1.png";
+import mobilethirdbanner1 from "../../../assets/Projects/Page/Canvas And Code/mobile third banner 1.png";
 import thirdbanner2 from "../../../assets/Projects/Page/Canvas And Code/third banner 2.png";
 
 function CanvasAndCode() {
@@ -28,7 +31,12 @@ function CanvasAndCode() {
             </div>
           </div>
           <div className="project-header-banner">
-            <img src={banner} alt="Canvas & Code Banner" />
+            <img src={banner} className="desktop" alt="Canvas & Code Banner" />
+            <img
+              src={mobilebanner}
+              className="mobile"
+              alt="Canvas & Code Banner"
+            />
           </div>
         </div>
         <div className="project-sections-container">
@@ -78,7 +86,8 @@ function CanvasAndCode() {
             </div>
           </div>
           <div className="project-second-banner">
-            <img src={secondbanner} />
+            <img src={secondbanner} className="desktop" />
+            <img src={mobilesecondbanner} className="mobile" />
           </div>
 
           <div className="project-points-container">
@@ -99,7 +108,8 @@ function CanvasAndCode() {
             </ul>
           </div>
           <div className="project-second-banner">
-            <img src={thirdbanner1} />
+            <img src={thirdbanner1} className="desktop" />
+            <img src={mobilethirdbanner1} className="mobile" />
           </div>
           <div className="project-journey">
             <h3>The Journey</h3>
