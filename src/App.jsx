@@ -12,6 +12,7 @@ import KiteByZerodha from "./components/Projects/Pages/KiteByZerodha";
 import AarogyaGuru from "./components/Projects/Pages/AarogyaGuru";
 import CanvasAndCode from "./components/Projects/Pages/CanvasAndCode";
 import WhatsApp from "./components/Projects/Pages/WhatsApp";
+import Youtube from "./components/Projects/Pages/Youtube";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="projects/aarogya_guru" element={<AarogyaGuru />} />
           <Route path="projects/canvas_and_code" element={<CanvasAndCode />} />
           <Route path="projects/whatsapp" element={<WhatsApp />} />
+          <Route path="projects/youtube" element={<Youtube />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Route>
