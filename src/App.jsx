@@ -15,6 +15,7 @@ import WhatsApp from "./components/Projects/Pages/WhatsApp";
 import Youtube from "./components/Projects/Pages/Youtube";
 import Coolzee from "./components/Projects/Pages/Coolzee";
 import UrbanMonkey from "./components/Projects/Pages/UrbanMonkey";
+import OlliePets from "./components/Projects/Pages/OlliePets";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="projects/youtube" element={<Youtube />} />
           <Route path="projects/coolzee" element={<Coolzee />} />
           <Route path="projects/urban_monkey" element={<UrbanMonkey />} />
+          <Route path="projects/ollie_pets" element={<OlliePets />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Route>

@@ -40,8 +40,7 @@ function Banner() {
             </div>
           </section>
           <p>
-            My journey as a UX designer, focused on transforming complex My
-            journey as a UX designer, focused on transforming complex{" "}
+            My journey as a UX designer, focused on transforming complex 
             <br className="desktop" />
             challenges into intuitive, user-centered solutions
           </p>
