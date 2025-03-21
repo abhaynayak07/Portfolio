@@ -5,7 +5,7 @@ function Forms() {
   const [phone, setPhone] = useState("");
 
   return (
-    <form>
+    <form action="https://formspree.io/f/xnnppdqg" method="POST">
       <section>
         <div className="name-input-container">
           <div className="input-container">
