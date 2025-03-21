@@ -24,7 +24,7 @@ function Story() {
       </div>
       <div className="home-story-container">
         <div className="home-story-video">
-          <video src={Trailer} muted autoPlay loop />
+          <video src={Trailer} muted autoPlay loop playsInline />
           <section>
             <h3>Aarbhata</h3>
             <p>A Film by Abhay Nayak</p>
