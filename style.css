@@ -1771,6 +1771,7 @@ footer p {
 
   .home-banner-scroll-text {
     height: auto;
+    overflow: visible;
   }
 
   .home-banner-container-main section h1 {
@@ -1796,7 +1797,7 @@ footer p {
   .project-banner .home-banner-container-main section h1 span {
     width: 100%;
     height: 48px;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .home-banner-container-main p {
@@ -2378,8 +2379,16 @@ footer p {
   }
 
   .contact-marquee .home-marquee-dark {
-    height: 400px;
-    filter: blur(60px);
+    height: 600px;
+    filter: blur(25px);
+  }
+
+  .contact-marquee .home-marquee-container .left {
+    left: -250px;
+  }
+
+  .contact-marquee .home-marquee-container .right {
+    right: -250px;
   }
 
   /* Footer */

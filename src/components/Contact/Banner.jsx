@@ -34,7 +34,8 @@ function Banner() {
             <p>Contact</p>
             <div className="home-banner-scroll-text">
               <h1>
-                Lets <br className="mobile" /> Connect &<span>{words[currentWordIndex]}</span>
+                Lets <br className="mobile" /> Connect &
+                <span>{words[currentWordIndex]}</span>
               </h1>
             </div>
           </section>
