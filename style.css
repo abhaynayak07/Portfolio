@@ -1790,7 +1790,7 @@ footer p {
   .home-banner-container-main section h1 span {
     width: 100%;
     height: 48px;
-    overflow: hidden;
+    overflow: visible;
     text-align: center;
   }
 
