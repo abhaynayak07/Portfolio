@@ -30,7 +30,7 @@ function Projects() {
         <div className="projects-heading-text">
           <h2>Recent Projects</h2>
           <p>
-            We create stunning, user-centric websites <br className="mobile" />{" "}
+            Creating stunning, user-centric websites <br className="mobile" />{" "}
             that inspire and <br className="desktop" /> engage.
           </p>
         </div>
