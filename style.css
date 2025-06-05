@@ -758,6 +758,7 @@ header nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-items: center;
   gap: 40px;
   align-self: stretch;
 }
@@ -825,7 +826,7 @@ header nav {
 }
 
 .home-story-para {
-  width: 100%;
+  max-width: 891px;
   color: #ccc;
   font-family: Raleway;
   font-size: 20px;
@@ -2017,7 +2018,7 @@ footer p {
   .home-story-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 24px;
     align-self: stretch;
   }
