@@ -48,11 +48,7 @@ function AarogyaGuru() {
             </div>
           </div>
           <div className="project-header-banner">
-            <img
-              src={banner}
-              className="desktop"
-              alt="Aarogya Guru Banner"
-            />
+            <img src={banner} className="desktop" alt="Aarogya Guru Banner" />
             <img
               src={mobilebanner}
               className="mobile"
@@ -78,16 +74,14 @@ function AarogyaGuru() {
               <div className="project-overview-set" style={{ height: "100%" }}>
                 <h3>Key Takeaways</h3>
                 <p>
-                  Redesigning Kite by Zerodha focused on improving clarity,
-                  navigation, and overall user experience. Users can now
-                  effortlessly explore the company’s offerings and track their
-                  documentation process with ease. The clear distinction between
-                  ETFs and stocks, along with categorized sections, enhances
-                  investment understanding. Quick access to various sectors and
-                  top performers supports informed decision-making. The
-                  introduction of the 'PLANS' feature empowers users to invest
-                  strategically in key life stages like education and health,
-                  making the app more valuable and user-friendly.
+                  Designing Aarogya Guru helped me understand the importance of
+                  simplifying healthcare access through intuitive digital
+                  solutions. I focused on building a user-friendly interface
+                  that makes appointment booking seamless, especially for users
+                  in semi-urban and rural areas. The process deepened my insight
+                  into the real-life pain points people face in scheduling
+                  doctor visits. Overall, it reinforced how thoughtful design
+                  can bridge gaps in essential services like healthcare.
                 </p>
               </div>
             </div>

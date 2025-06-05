@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import DesktopBackground from "../../assets/Projects/ProjectsList/Desktop Background.png";
 import MobileBackground from "../../assets/Projects/ProjectsList/Mobile Background.png";
+import SchoolMate from "../../assets/Projects/ProjectsList/School Mate.png";
+import SchoolMateGlow from "../../assets/Projects/ProjectsList/School Mate Background Glow.png";
+import QEasy from "../../assets/Projects/ProjectsList/Q Easy.png";
+import QEasyGlow from "../../assets/Projects/ProjectsList/Q Easy Background Glow.png";
 import GoogleClassroom from "../../assets/Projects/ProjectsList/Google Classroom.png";
 import GoogleClassroomBackgroundGlow from "../../assets/Projects/ProjectsList/Google Classroom Background Glow.png";
 import RentMyRide from "../../assets/Projects/ProjectsList/Rent My Ride.png";
@@ -38,12 +42,38 @@ function Projects() {
         <div className="projects-heading-text">
           <h2>All Projects</h2>
           <p>
-            We create stunning, user-centric websites <br className="mobile" /> that inspire and{" "}
-            <br className="desktop" /> engage.
+            We create stunning, user-centric websites <br className="mobile" />{" "}
+            that inspire and <br className="desktop" /> engage.
           </p>
         </div>
       </div>
       <div className="projects-container">
+        <Link className="projects-set" to="/projects/school_mate">
+          <div className="projects-set-img">
+            <img src={SchoolMate} className="main-img" />
+            <img src={SchoolMateGlow} className="glow-img" />
+          </div>
+          <div className="projects-set-text">
+            <p>Mobile Application</p>
+            <section>
+              <h3>School Mate</h3>
+              <sub>2025</sub>
+            </section>
+          </div>
+        </Link>
+        <Link className="projects-set" to="/projects/q_easy">
+          <div className="projects-set-img">
+            <img src={QEasy} className="main-img" />
+            <img src={QEasyGlow} className="glow-img" />
+          </div>
+          <div className="projects-set-text">
+            <p>Mobile Application</p>
+            <section>
+              <h3>Q Easy</h3>
+              <sub>2025</sub>
+            </section>
+          </div>
+        </Link>
         <Link className="projects-set" to="/projects/google_classroom">
           <div className="projects-set-img">
             <img src={GoogleClassroom} className="main-img" />

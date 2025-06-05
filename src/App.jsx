@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import SchoolMate from "./components/Projects/Pages/SchoolMate";
+import QEasy from "./components/Projects/Pages/QEasy";
 import GoogleClassroom from "./components/Projects/Pages/GoogleClassroom";
 import RentMyRide from "./components/Projects/Pages/RentMyRide";
 import KiteByZerodha from "./components/Projects/Pages/KiteByZerodha";
@@ -26,6 +28,8 @@ function App() {
         <Route path="/">
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="projects/school_mate" element={<SchoolMate />} />
+          <Route path="projects/q_easy" element={<QEasy />} />
           <Route
             path="projects/google_classroom"
             element={<GoogleClassroom />}

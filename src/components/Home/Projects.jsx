@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import DesktopBackground from "../../assets/Home/Projects/Desktop Background.png";
 import MobileBackground from "../../assets/Home/Projects/Mobile Background.png";
+import SchoolMate from "../../assets/Home/Projects/School Mate.png";
+import SchoolMateGlow from "../../assets/Home/Projects/School Mate Background Glow.png";
+import QEasy from "../../assets/Home/Projects/Q Easy.png";
+import QEasyGlow from "../../assets/Home/Projects/Q Easy Background Glow.png";
 import GoogleClassroom from "../../assets/Home/Projects/Google Classroom.png";
 import GoogleClassroomBackgroundGlow from "../../assets/Home/Projects/Google Classroom Background Glow.png";
-import RentMyRide from "../../assets/Home/Projects/Rent My Ride.png";
-import RentMyRideBackgroundGlow from "../../assets/Home/Projects/Rent My Ride Background Glow.png";
-import KITE from "../../assets/Home/Projects/KITE.png";
-import KITEBackgroundGlow from "../../assets/Home/Projects/KITE Background Glow.png";
 import CanvasCode from "../../assets/Home/Projects/Canvas & Code.png";
 import CanvasCodeBackgroundGlow from "../../assets/Home/Projects/Canvas & Code Background Glow.png";
 import OlliePets from "../../assets/Home/Projects/Ollie Pets.png";
@@ -36,6 +36,32 @@ function Projects() {
         </div>
       </div>
       <div className="projects-container">
+         <Link className="projects-set" to="/projects/school_mate">
+                  <div className="projects-set-img">
+                    <img src={SchoolMate} className="main-img" />
+                    <img src={SchoolMateGlow} className="glow-img" />
+                  </div>
+                  <div className="projects-set-text">
+                    <p>Mobile Application</p>
+                    <section>
+                      <h3>School Mate</h3>
+                      <sub>2025</sub>
+                    </section>
+                  </div>
+                </Link>
+                <Link className="projects-set" to="/projects/q_easy">
+                  <div className="projects-set-img">
+                    <img src={QEasy} className="main-img" />
+                    <img src={QEasyGlow} className="glow-img" />
+                  </div>
+                  <div className="projects-set-text">
+                    <p>Mobile Application</p>
+                    <section>
+                      <h3>Q Easy</h3>
+                      <sub>2025</sub>
+                    </section>
+                  </div>
+                </Link>
         <Link className="projects-set" to="/projects/google_classroom">
           <div className="projects-set-img">
             <img src={GoogleClassroom} className="main-img" />
@@ -45,32 +71,6 @@ function Projects() {
             <p>Mobile Application</p>
             <section>
               <h3>Google Classroom</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
-        <Link className="projects-set" to="/projects/rent_my_ride">
-          <div className="projects-set-img">
-            <img src={RentMyRide} className="main-img" />
-            <img src={RentMyRideBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Mobile Application</p>
-            <section>
-              <h3>Rent My Ride</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
-        <Link className="projects-set" to="/projects/kite_by_zerodha">
-          <div className="projects-set-img">
-            <img src={KITE} className="main-img" />
-            <img src={KITEBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Mobile Application</p>
-            <section>
-              <h3>Kite by Zerodha</h3>
               <sub>2023</sub>
             </section>
           </div>
