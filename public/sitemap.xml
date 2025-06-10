@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://www.abhaynayak.com/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.abhaynayak.com/projects</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.abhaynayak.com/contact</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.abhaynayak.com/project/aarogya_guru</loc>
+  </url>
+  <url>
+    <loc>https://www.abhaynayak.com/project/canvas_and_code</loc>
+  </url>
+  <url>
+    <loc>https://www.abhaynayak.com/project/coolzee</loc>
+  </url>
+  <url>
+    <loc>https://www.abhaynayak.com/project/google_classroom</loc>
+  </url>
+  <url>
+    <loc>https://www.abhaynayak.com/project/kite_by_zerodha</loc>
+  </url>
+  <url>
+    <loc>https://www.abhaynayak.com/project/ollie_pets</loc>
+  </url>
+  <url>
+    <loc>https://www.abhaynayak.com/project/q_easy</loc>
+  </url>
+  <url>
+    <loc>https://www.abhaynayak.com/project/rent_my_ride</loc>
+  </url>
+  <url>
+    <loc>https://www.abhaynayak.com/project/school_mate</loc>
+  </url>
+  <url>
+    <loc>https://www.abhaynayak.com/project/urban_monkey</loc>
+  </url>
+  <url>
+    <loc>https://www.abhaynayak.com/project/whatsapp</loc>
+  </url>
+  <url>
+    <loc>https://www.abhaynayak.com/project/youtube</loc>
+  </url>
+</urlset>
