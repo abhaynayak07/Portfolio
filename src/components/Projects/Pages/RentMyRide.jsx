@@ -1,29 +1,79 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import icon from "../../../assets/Projects/Page/Rent My Ride/icon.png";
-import banner from "../../../assets/Projects/Page/Rent My Ride/banner.png";
-import mobilebanner from "../../../assets/Projects/Page/Rent My Ride/mobile banner.png";
-import toolused from "../../../assets/Projects/Page/Rent My Ride/tool used.png";
-import overviewimg from "../../../assets/Projects/Page/Rent My Ride/overview img.png";
-import secondbanner from "../../../assets/Projects/Page/Rent My Ride/second banner.png";
-import mobilesecondbanner from "../../../assets/Projects/Page/Rent My Ride/mobile second banner.png";
-import thirdbanner1 from "../../../assets/Projects/Page/Rent My Ride/third banner 1.png";
-import thirdbanner2 from "../../../assets/Projects/Page/Rent My Ride/third banner 2.png";
-import bento12 from "../../../assets/Projects/Page/Rent My Ride/bento 1.2.png";
-import bento11 from "../../../assets/Projects/Page/Rent My Ride/bento 1.1.png";
-import bento13 from "../../../assets/Projects/Page/Rent My Ride/bento 1.3.png";
-import bento14 from "../../../assets/Projects/Page/Rent My Ride/bento 1.4.png";
-import bento21 from "../../../assets/Projects/Page/Rent My Ride/bento 2.1.png";
-import bento22 from "../../../assets/Projects/Page/Rent My Ride/bento 2.2.png";
-import bento23 from "../../../assets/Projects/Page/Rent My Ride/bento 2.3.png";
-import bento24 from "../../../assets/Projects/Page/Rent My Ride/bento 2.4.png";
-import bento25 from "../../../assets/Projects/Page/Rent My Ride/bento 2.5.png";
+/* eslint-disable no-unused-vars */
+import { motion, AnimatePresence } from "framer-motion";
+import icon from "../../../asset/Projects/Page/Rent My Ride/icon.webp";
+import banner from "../../../asset/Projects/Page/Rent My Ride/banner.webp";
+import mobilebanner from "../../../asset/Projects/Page/Rent My Ride/mobile banner.webp";
+import toolused from "../../../asset/Projects/Page/Rent My Ride/tool used.webp";
+import overviewimg from "../../../asset/Projects/Page/Rent My Ride/overview img.webp";
+import bento12 from "../../../asset/Projects/Page/Rent My Ride/bento 1.2.webp";
+import bento11 from "../../../asset/Projects/Page/Rent My Ride/bento 1.1.webp";
+import bento13 from "../../../asset/Projects/Page/Rent My Ride/bento 1.3.webp";
+import bento14 from "../../../asset/Projects/Page/Rent My Ride/bento 1.4.webp";
+import bento21 from "../../../asset/Projects/Page/Rent My Ride/bento 2.1.webp";
+import bento22 from "../../../asset/Projects/Page/Rent My Ride/bento 2.2.webp";
+import bento23 from "../../../asset/Projects/Page/Rent My Ride/bento 2.3.webp";
+import bento24 from "../../../asset/Projects/Page/Rent My Ride/bento 2.4.webp";
+import bento25 from "../../../asset/Projects/Page/Rent My Ride/bento 2.5.webp";
+import BackgroundStars from "../../Backgroundsars"
+import OtherProjects from "../..//Home/OtherProjects";
 
 function RentMyRide() {
+  const roles = [
+      "UX Research",
+      "UX Flow",
+      "Wireframing",
+      "Rapid Prototyping",
+      "Design Thinking",
+      "Design Systems",
+      "components",
+      "Interface Design",
+      "Visual Design",
+    ];
+  
+    // Animation variants
+    const containerVariants = {
+      hidden: { opacity: 0 },
+      show: {
+        opacity: 1,
+        transition: { staggerChildren: 0.25 },
+      },
+    };
+  
+    const itemVariants = {
+      hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+      show: {
+        opacity: 1,
+        y: 0,
+        filter: "blur(0px)",
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    };
+  
+    const contentVariants = {
+      hidden: { opacity: 0, y: 20 },
+      show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5, ease: "easeOut" }
+      },
+      exit: {
+        opacity: 0,
+        y: -20,
+        transition: { duration: 0.3 }
+      }
+  };
+
   return (
-    <div className="pages-container">
-      <div className="about-project">
-        <div className="project-header">
+    <>
+    <motion.div 
+         className="pages-container"
+         initial="hidden"
+         animate="show"
+         variants={containerVariants}
+       >
+         <BackgroundStars />
+         <motion.div className="about-project" variants={itemVariants}>
+           <motion.div className="project-header" variants={itemVariants}>
           <div className="project-header-text-and-icon">
             <div className="project-header-icon">
               <img
@@ -36,7 +86,10 @@ function RentMyRide() {
             </div>
             <div className="project-header-text">
               <h2>Rent My Ride</h2>
-              <p>Mobile Application</p>
+              <div style={{display: "flex", gap: "5px"}}>
+                <p>Mobile Application</p>
+                <p>2023</p>
+              </div>
             </div>
           </div>
           <div className="project-header-banner">
@@ -47,95 +100,75 @@ function RentMyRide() {
               alt="Rent My Ride Banner"
             />
           </div>
-        </div>
-        <div className="project-sections-container">
-          <div className="project-overview">
-            <div className="project-overview-container">
-              <div className="project-overview-set">
-                <h3>Project Overview</h3>
-                <p>
-                  Rent My Ride stands out as a reliable and user-friendly
-                  vehicle rental app, serving millions of users across India.
-                  With its commitment to timely assistance in case of breakdowns
-                  or other issues, it ensures that customers can enjoy a
-                  comfortable and worry-free ride.
-                </p>
-              </div>
-              <div className="project-overview-set" style={{ height: "100%" }}>
-                <h3>Key Takeaways</h3>
-                <p>
-                  Designing "Rent My Ride" was a deep dive into understanding
-                  user needs for seamless vehicle rentals across India. I
-                  focused on crafting an intuitive user experience that
-                  simplifies the booking process. Through this project, I
-                  learned valuable insights about user behavior, accessibility,
-                  and optimizing navigation for convenience. Balancing
-                  functionality with a clean, engaging design was a key
-                  challenge.
-                </p>
-              </div>
-            </div>
-            <div className="project-overview-container">
-              <div className="project-overview-set">
-                <h3>Tool Used</h3>
-                <div className="tool-used">
-                  <img src={toolused} />
-                  <section>
-                    <h4>Figma</h4>
-                    <p>Design Tool</p>
-                  </section>
-                </div>
-              </div>
-              <div className="project-overview-set">
-                <h3>Timeline</h3>
-                <h4>October 2023</h4>
-              </div>
-              <div className="project-overview-img">
-                <img src={overviewimg} />
-              </div>
-            </div>
-          </div>
-          <div className="project-second-banner">
-            <img src={secondbanner} className="desktop" />
-            <img src={mobilesecondbanner} className="mobile" />
-          </div>
-
-          <div className="project-points-container">
-            <h3>Goals</h3>
-            <ul className="project-points-div">
-              <li className="project-points">
-                Ensure a hassle-free and intuitive process for users to rent
-                vehicles quickly and efficiently across India.
-              </li>
-              <li className="project-points">
-                Create an engaging and accessible interface that caters to
-                diverse user needs
-              </li>
-              <li className="project-points">
-                Build a secure platform with verified listings, clear pricing,
-                and a smooth rental experience
-              </li>
-            </ul>
-          </div>
-          <div className="project-third-banner">
-            <img src={thirdbanner1} />
-            <img src={thirdbanner2} />
-          </div>
-          <div className="project-journey">
-            <h3>The Journey</h3>
-            <p>
-              The journey of designing Rent My Ride started with in-depth user
-              research to understand rental challenges in India. I identified
-              pain points like complex booking, unclear pricing, and trust
-              issues. Using design thinking, I created low-fidelity wireframes
-              and refined them through iterations and feedback. The
-              high-fidelity prototype ensured an intuitive and seamless booking
-              experience. The final product delivered a user-friendly,
-              efficient, and reliable rental platform.
-            </p>
-          </div>
-        </div>
-      </div>
+        </motion.div>
+        <motion.div className="project-sections-container" variants={itemVariants}>
+                  <div className="project-overview">
+                                  
+                        
+                                    <AnimatePresence mode="wait">
+                                      <motion.div
+                                        className="project-overview-content"
+                                        variants={contentVariants}
+                                        initial="hidden"
+                                        animate="show"
+                                        exit="exit"
+                                      >
+                                          <motion.div 
+                                            className="overview-content"
+                                            variants={containerVariants}
+                                            initial="hidden"
+                                            animate="show"
+                                          >
+                                            <motion.div className="project-overview-container" variants={itemVariants}>
+                                              <div className="project-overview-set">
+                                                <h3>PROJECT OVERVIEW</h3>
+                                                <p>
+                                                  Rent My Ride is a reliable and user-friendly vehicle rental app serving users across India nationwide. It enables easy access to rental vehicles with a smooth and hassle-free booking experience. The app prioritizes timely assistance during breakdowns or unexpected issues on the road. This ensures a comfortable, safe, and worry-free journey for customers.
+                                                </p>
+                                              </div>
+                                              <div className="project-overview-set">
+                                                <h3>MY ROLE</h3>
+                                                <div className="role-list-container">
+                                                  {roles.map((item, idx) => (
+                                                    <motion.div 
+                                                      key={idx} 
+                                                      className="industry-item"
+                                                      variants={itemVariants}
+                                                    >
+                                                      <div className="top-orange-blur"></div>
+                                                      {item}
+                                                      <div className="bottom-purple-blur"></div>
+                                                    </motion.div>
+                                                  ))}
+                                                </div>
+                                              </div>
+                                            </motion.div>
+                                            <motion.div className="project-overview-container" variants={itemVariants}>
+                                              <div className="project-overview-set">
+                                                <h3>TOOL USED</h3>
+                                                <div className="tool-used">
+                                                  <img src={toolused} />
+                                                  <section>
+                                                    <h4>Figma</h4>
+                                                    <p>Design Tool</p>
+                                                  </section>
+                                                </div>
+                                              </div>
+                                              <div className="project-overview-set">
+                                                <h3>TIMELINE</h3>
+                                                <h4>October 2023</h4>
+                                              </div>
+                                              <div className="project-overview-img">
+                                                <img src={overviewimg} />
+                                              </div>
+                                            </motion.div>
+                                          </motion.div>
+                        
+                                      </motion.div>
+                                    </AnimatePresence>
+                                  </div>
+                </motion.div>
+      </motion.div>
       <div className="project-bento">
         <div className="project-bento-container">
           <img src={bento11} />
@@ -151,16 +184,9 @@ function RentMyRide() {
           <img src={bento25} />
         </div>
       </div>
-      <div className="project-link">
-        <h3>More on the Project</h3>
-        <a
-          href="https://www.behance.net/gallery/182024727/Booking-App-UIUX-Design"
-          target="_blank"
-        >
-          Rent My Ride
-        </a>
-      </div>
-    </div>
+      </motion.div>
+      <OtherProjects currentProject="rentmyride" />
+      </>
   );
 }
 

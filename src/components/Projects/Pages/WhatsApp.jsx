@@ -1,24 +1,75 @@
-import React from "react";
-import icon from "../../../assets/Projects/Page/WhatsApp/icon.png";
-import banner from "../../../assets/Projects/Page/WhatsApp/banner.png";
-import mobilebanner from "../../../assets/Projects/Page/WhatsApp/mobile banner.png";
-import toolused from "../../../assets/Projects/Page/WhatsApp/tool used.png";
-import overviewimg from "../../../assets/Projects/Page/WhatsApp/overview img.png";
-import secondbanner from "../../../assets/Projects/Page/WhatsApp/second banner.png";
-import mobilesecondbanner from "../../../assets/Projects/Page/WhatsApp/mobile second banner.png";
-import bento11 from "../../../assets/Projects/Page/WhatsApp/bento 1.1.png";
-import bento12 from "../../../assets/Projects/Page/WhatsApp/bento 1.2.png";
-import bento13 from "../../../assets/Projects/Page/WhatsApp/bento 1.3.png";
-import bento21 from "../../../assets/Projects/Page/WhatsApp/bento 2.1.png";
-import bento22 from "../../../assets/Projects/Page/WhatsApp/bento 2.2.png";
-import bento23 from "../../../assets/Projects/Page/WhatsApp/bento 2.3.png";
-import bento24 from "../../../assets/Projects/Page/WhatsApp/bento 2.4.png";
+/* eslint-disable no-unused-vars */
+import { motion, AnimatePresence } from "framer-motion";
+import BackgroundStars from "../../Backgroundsars";
+import icon from "../../../asset/Projects/Page/WhatsApp/icon.webp";
+import banner from "../../../asset/Projects/Page/WhatsApp/banner.webp";
+import mobilebanner from "../../../asset/Projects/Page/WhatsApp/mobile banner.webp";
+import toolused from "../../../asset/Projects/Page/WhatsApp/tool used.webp";
+import overviewimg from "../../../asset/Projects/Page/WhatsApp/overview img.webp";
+import bento11 from "../../../asset/Projects/Page/WhatsApp/bento 1.1.webp";
+import bento12 from "../../../asset/Projects/Page/WhatsApp/bento 1.2.webp";
+import bento13 from "../../../asset/Projects/Page/WhatsApp/bento 1.3.webp";
+import bento21 from "../../../asset/Projects/Page/WhatsApp/bento 2.1.webp";
+import bento22 from "../../../asset/Projects/Page/WhatsApp/bento 2.2.webp";
+import bento23 from "../../../asset/Projects/Page/WhatsApp/bento 2.3.webp";
+import bento24 from "../../../asset/Projects/Page/WhatsApp/bento 2.4.webp";
 
 function WhatsApp() {
+
+  const roles = [
+      "UX Flow",
+      "Wireframing",
+      "Rapid Prototyping",
+      "Design Thinking",
+      "Design Systems",
+      "components",
+      "Interface Design",
+      "Visual Design",
+    ];
+  
+    const containerVariants = {
+      hidden: { opacity: 0 },
+      show: {
+        opacity: 1,
+        transition: { staggerChildren: 0.25 },
+      },
+    };
+  
+    const itemVariants = {
+      hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+      show: {
+        opacity: 1,
+        y: 0,
+        filter: "blur(0px)",
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    };
+  
+    const contentVariants = {
+      hidden: { opacity: 0, y: 20 },
+      show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5, ease: "easeOut" }
+      },
+      exit: {
+        opacity: 0,
+        y: -20,
+        transition: { duration: 0.3 }
+      }
+  };
+
   return (
-    <div className="pages-container">
-      <div className="about-project">
-        <div className="project-header">
+    <>
+    <motion.div 
+         className="pages-container"
+         initial="hidden"
+         animate="show"
+         variants={containerVariants}
+       >
+         <BackgroundStars />
+         <motion.div className="about-project" variants={itemVariants}>
+           <motion.div className="project-header" variants={itemVariants}>
           <div className="project-header-text-and-icon">
             <div className="project-header-icon">
               <img
@@ -31,7 +82,10 @@ function WhatsApp() {
             </div>
             <div className="project-header-text">
               <h2>WhatsApp</h2>
-              <p>Mobile Application</p>
+              <div style={{display: "flex", gap: "5px"}}>
+                <p>Mobile Application</p>
+                <p>2023</p>
+              </div>
             </div>
           </div>
           <div className="project-header-banner">
@@ -46,74 +100,73 @@ function WhatsApp() {
               alt="WhatsApp Banner"
             />
           </div>
-        </div>
-        <div className="project-sections-container">
+        </motion.div>
+        <motion.div className="project-sections-container" variants={itemVariants}>
           <div className="project-overview">
-            <div className="project-overview-container">
-              <div className="project-overview-set">
-                <h3>Project Overview</h3>
-                <p>
-                  WhatsApp is a global messaging app that enables secure text,
-                  voice, and video communication. It offers features like group
-                  chats, media sharing, and end-to-end encryption for privacy.
-                  Its simple interface and cross-platform support make it ideal
-                  for both personal and business use.
-                </p>
-              </div>
-              <div className="project-overview-set" style={{ height: "100%" }}>
-                <h3>Key Takeaways</h3>
-                <p>
-                  Designing WhatsApp’s UI involved accurately recreating its
-                  familiar and intuitive interface, ensuring consistency with
-                  the original experience. I focused on replicating the Home
-                  Page, Status, Calls, and Text Messaging UIs, maintaining
-                  seamless navigation and user-friendly interactions. Attention
-                  to detail in spacing, typography, and color ensured a precise
-                  match to the real app. The final design successfully mirrored
-                  WhatsApp’s functionality and aesthetics, reinforcing ease of
-                  use and familiarity.
-                </p>
-              </div>
-            </div>
-            <div className="project-overview-container">
-              <div className="project-overview-set">
-                <h3>Tool Used</h3>
-                <div className="tool-used">
-                  <img src={toolused} />
-                  <section>
-                    <h4>Figma</h4>
-                    <p>Design Tool</p>
-                  </section>
-                </div>
-              </div>
-              <div className="project-overview-set">
-                <h3>Timeline</h3>
-                <h4>September 2023</h4>
-              </div>
-              <div className="project-overview-img">
-                <img src={overviewimg} />
-              </div>
-            </div>
-          </div>
-          <div className="project-second-banner">
-            <img src={secondbanner} className="desktop" />
-            <img src={mobilesecondbanner} className="mobile" />
-          </div>
-
-          <div className="project-journey">
-            <h3>The Journey</h3>
-            <p>
-              The journey of designing WhatsApp’s UI started with carefully
-              analyzing its structure, layout, and interactions. I recreated the
-              Home Page, Status, Calls, and Text Messaging UIs with precision,
-              ensuring accuracy in design elements. Every detail, from
-              typography to spacing, was meticulously crafted to match the
-              original interface. The final design delivered an exact replica,
-              maintaining WhatsApp’s seamless and user-friendly experience.
-            </p>
-          </div>
-        </div>
-      </div>
+                                    <AnimatePresence mode="wait">
+                                      <motion.div
+                                        className="project-overview-content"
+                                        variants={contentVariants}
+                                        initial="hidden"
+                                        animate="show"
+                                        exit="exit"
+                                      >
+                                          <motion.div 
+                                            className="overview-content"
+                                            variants={containerVariants}
+                                            initial="hidden"
+                                            animate="show"
+                                          >
+                                            <motion.div className="project-overview-container" variants={itemVariants}>
+                                              <div className="project-overview-set">
+                                                <h3>PROJECT OVERVIEW</h3>
+                                                <p>
+                                                  WhatsApp is a global messaging platform that enables secure text, voice, and video communication. It supports group chats, media sharing, and real-time conversations across devices. End-to-end encryption ensures user privacy and data protection. Its simple interface makes it suitable for both personal and business communication.
+                                                </p>
+                                              </div>
+                                              <div className="project-overview-set">
+                                                <h3>MY ROLE</h3>
+                                                <div className="role-list-container">
+                                                  {roles.map((item, idx) => (
+                                                    <motion.div 
+                                                      key={idx} 
+                                                      className="industry-item"
+                                                      variants={itemVariants}
+                                                    >
+                                                      <div className="top-orange-blur"></div>
+                                                      {item}
+                                                      <div className="bottom-purple-blur"></div>
+                                                    </motion.div>
+                                                  ))}
+                                                </div>
+                                              </div>
+                                            </motion.div>
+                                            <motion.div className="project-overview-container" variants={itemVariants}>
+                                              <div className="project-overview-set">
+                                                <h3>TOOL USED</h3>
+                                                <div className="tool-used">
+                                                  <img src={toolused} />
+                                                  <section>
+                                                    <h4>Figma</h4>
+                                                    <p>Design Tool</p>
+                                                  </section>
+                                                </div>
+                                              </div>
+                                              <div className="project-overview-set">
+                                                <h3>TIMELINE</h3>
+                                                <h4>September 2023</h4>
+                                              </div>
+                                              <div className="project-overview-img">
+                                                <img src={overviewimg} />
+                                              </div>
+                                            </motion.div>
+                                          </motion.div>
+                        
+                                      </motion.div>
+                                    </AnimatePresence>
+                                  </div>
+        </motion.div>
+      </motion.div>
       <div className="project-bento">
         <div className="project-bento-container">
           <img src={bento11} />
@@ -127,16 +180,10 @@ function WhatsApp() {
           <img src={bento24} />
         </div>
       </div>
-      <div className="project-link">
-        <h3>More on the Project</h3>
-        <a
-          href="https://www.behance.net/gallery/179807285/WhatsApp-UIUX-Design"
-          target="_blank"
-        >
-          WhatsApp
-        </a>
-      </div>
-    </div>
+      
+      </motion.div>
+      <OtherProjects currentProject="whatsapp" />
+      </>
   );
 }
 

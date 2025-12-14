@@ -1,22 +1,41 @@
-import React from "react";
-import DesktopBackground from "../../assets/Home/Marquee/Desktop Background.png";
-import GoogleClassroom from "../../assets/Home/Marquee/Google Classroom.png";
-import Ollie from "../../assets/Home/Marquee/Ollie.png";
-import Whatsapp from "../../assets/Home/Marquee/Whatsapp.png";
-import KITE from "../../assets/Home/Marquee/KITE.png";
-import Cricbuzz from "../../assets/Home/Marquee/Cricbuzz.png";
-import URBANMoneky from "../../assets/Home/Marquee/URBAN Moneky.png";
-import Youtube from "../../assets/Home/Marquee/Youtube.png";
+/* eslint-disable no-unused-vars */
+import { motion } from "framer-motion";
+import GoogleClassroom from "../../asset/Home/Marquee/Google Classroom.webp";
+import Ollie from "../../asset/Home/Marquee/Ollie.webp";
+import Whatsapp from "../../asset/Home/Marquee/Whatsapp.webp";
+import KITE from "../../asset/Home/Marquee/KITE.webp";
+import Cricbuzz from "../../asset/Home/Marquee/Cricbuzz.webp";
+import URBANMoneky from "../../asset/Home/Marquee/URBAN Moneky.webp";
+import Youtube from "../../asset/Home/Marquee/Youtube.webp";
+
+
+const item = {
+  hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
 
 function Marquee() {
   return (
-    <div className="home-marquee">
-      <img
+     <div className="home-marquee ">
+      {/* <img
         className="home-marquee-background"
         src={DesktopBackground}
         alt="Background"
-      />
-      <h2>Redesign Concepts</h2>
+      /> */}
+      <motion.h2
+        variants={item}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        style={{ display: "inline-block" }}
+      >
+        Redesign Concepts
+      </motion.h2>
       <div className="home-marquee-container">
         <div className="marquee-wrapper">
           <div className="marquee-marquee">

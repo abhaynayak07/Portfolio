@@ -1,0 +1,319 @@
+.globe-exp-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  padding: 120px 20px 300px 20px;
+  color: #ffffff;
+}
+
+.globe-header-container h2{
+    color: #fff;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-style: normal;
+    text-align: center;
+    /* text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25); */
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -1.28px;
+    margin: 0;
+    z-index: 50;
+}
+
+.globe-exp-wrapper svg{
+    margin: 100px auto 0 auto;
+}
+
+.globe-header-container p{
+    color: #999999;
+    letter-spacing: 16%;
+    line-height: auto;
+    font-size: 24px;
+    font-weight: regular;
+}
+
+.globe-wrapper{
+    position: absolute;
+    inset: 0;
+    top: 100px;
+    z-index: -10;
+}
+
+.relative-wrap{
+    position: relative;
+}
+
+.circle {
+    border: 1px solid #333333;
+    border-radius: 50%;
+}
+
+.globe-1 {
+    position: absolute;
+    left: 50%;
+    top:0;
+    transform: translate(-50%,0);
+    width: 600px;
+    height: 600px;
+}
+
+.globe-2 {
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translate(-57.5%, 0);
+    width: 520px;
+    height: 520px;
+}
+
+.globe-3 {
+    position: absolute;
+    left: 50%;
+    top: 74.5px;
+    transform: translate(-66.5%, 0);
+    width: 451px;
+    height: 451px;
+}
+
+.globe-4 {
+    position: absolute;
+    left: 50%;
+    top: 113.5px;
+    transform: translate(-80.5%, 0);
+    width: 373px;
+    height: 373px;
+}
+
+.globe-5 {
+    position: absolute;
+    left: 50%;
+    top: 153.5px;
+    transform: translate(-102%, 0);
+    width: 293px;
+    height: 293px;
+}
+
+.globe-6 {
+    position: absolute;
+    left: 50%;
+    top: 179.5px;
+    transform: translate(-124.5%, 0);
+    width: 241px;
+    height: 241px;
+}
+
+.globe-7 {
+    position: absolute;
+    left: 50%;
+    top: 222px;
+    transform: translate(-191.5%, 0);
+    width: 156px;
+    height: 156px;
+}
+
+.stage-1{
+    position: absolute;
+    right: 250px;
+    top: 170px
+}
+
+.stage-2{
+    position: absolute;
+    left: 360px;
+    top: 195px
+}
+
+.stage-3{
+    position: absolute;
+    left: 300px;
+    top: 410px
+}
+
+.stage-4{
+    position: absolute;
+    right: 250px;
+    top: 470px
+}
+
+.relative-wrap h4{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -2%;
+    text-align: start;
+}
+
+.relative-wrap p{
+    color: #999999;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -2%;
+    text-align: start;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-style: normal;
+}
+
+.month-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  height: 1em;
+  vertical-align: bottom;
+}
+
+.month-track {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0);
+  transition: transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.month-track.animate {
+  transform: translateY(calc(-1em - 20px));
+}
+
+.month-track {
+  will-change: transform;
+}
+
+
+.month {
+  background: transparent !important; 
+  box-shadow: none !important;
+  text-shadow: none; 
+}
+
+
+@media (max-width: 1000px) {
+    .globe-header-container h2 {
+        font-size: 42px;
+        letter-spacing: -0.8px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .globe-header-container p{
+        font-size: 16px;
+    }
+
+    .globe-exp-wrapper {
+        padding: 80px 20px 80px 20px;
+    }
+
+  .globe-header-container h2 {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+  }
+
+  .globe-exp-wrapper svg{
+    margin: 0 auto 0 auto;
+}
+
+  .globe-wrapper{
+        top: 200px;
+    }
+
+    .globe-1 {
+        position: absolute;
+        left: 50%;
+        top:0;
+        transform: translate(-50%,0);
+        width: 335px;
+        height: 335px;
+    }
+
+    .globe-2 {
+        position: absolute;
+        left: 50%;
+        top: 22.5px;
+        transform: translate(-57.5%, 0);
+        width: 290px;
+        height: 290px;
+    }
+
+    .globe-3 {
+        position: absolute;
+        left: 50%;
+        top: 42px;
+        transform: translate(-66.5%, 0);
+        width: 251px;
+        height: 251px;
+    }
+
+    .globe-4 {
+        position: absolute;
+        left: 50%;
+        top: 63.5px;
+        transform: translate(-80.5%, 0);
+        width: 208px;
+        height: 208px;
+    }
+
+    .globe-5 {
+        position: absolute;
+        left: 50%;
+        top: 86.5px;
+        transform: translate(-102%, 0);
+        width: 163px;
+        height: 163px;
+    }
+
+    .globe-6 {
+        position: absolute;
+        left: 50%;
+        top: 100.5px;
+        transform: translate(-124.5%, 0);
+        width: 134px;
+        height: 134px;
+    }
+
+    .globe-7 {
+        position: absolute;
+        left: 50%;
+        top: 124px;
+        transform: translate(-191.5%, 0);
+        width: 87px;
+        height: 87px;
+    }
+
+    .relative-wrap h4{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .relative-wrap p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .stage-1{
+        position: absolute;
+        right: 20px;
+        top: 30px
+    }
+
+    .stage-2{
+        position: absolute;
+        left: 120px;
+        top: 140px
+    }
+
+    .stage-3{
+        position: absolute;
+        left: 80px;
+        top: 225px
+    }
+
+    .stage-4{
+        position: absolute;
+        right: 150px;
+        top: 380px
+    }
+
+    .month-track.animate {
+    transform: translateY(calc(-1em - 9.5px));
+    }
+
+}

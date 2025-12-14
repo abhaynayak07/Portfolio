@@ -1,53 +1,82 @@
-import React, { useState, useEffect } from "react";
-import DesktopBackground from "../../assets/Projects/Banner/Desktop Banner Background.png";
-import MobileBackground from "../../assets/Projects/Banner/Mobile Banner Background.png";
+import BackgroundLines from "../../asset/Home/Banner/BackgrounLines.webp";
+import MobileBackgroundLines from "../../asset/Home/Banner/MobileBackgroundLines.webp";
+import BackgroundStars from "../../asset/Home/Banner/BackgroundStars.webp";
 import OpenToWork from "../OpenToWork";
+import BannerBackground from "../../asset/Home/Banner/BannerBackground.webp";
+import ArrowForward from "../../asset/Home/Banner/arrow-forward.svg";
+import { Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 
-function Banner() {
-  const words = ["Passion", "Purpose", "Vision", "Impact"];
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+export default function Banner() {
+  // Parent stagger container
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.25 },
+    },
+  };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
+  // Child animation (fade + move up + blur)
+  const item = {
+    hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+    show: {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
 
   return (
-    <div className="home-banner project-banner">
-      <img
-        className="home-banner-background desktop"
-        src={DesktopBackground}
-        alt="Background"
-      />
-      <img
-        className="home-banner-background mobile"
-        src={MobileBackground}
-        alt="Background"
-      />
+    <motion.div
+      className="home-banner"
+      variants={container}
+      initial="hidden"
+      animate="show"
+    >
+      {/* <img className="home-banner-background-stars" src={BackgroundStars} alt="Background" /> */}
+      <img className="home-banner-background desktop" src={BackgroundLines} alt="Background" />
+      <img className="home-banner-background-mob mobile" src={MobileBackgroundLines} alt="Background" />
+      <img className="blur-background" src={BannerBackground} alt="Banner Blur Background" />
+
       <div className="home-banner-container">
-        <OpenToWork />
+
+        {/* Badge Animation */}
+        <motion.div variants={item}>
+          <OpenToWork />
+        </motion.div>
+
         <div className="home-banner-container-main">
           <section>
-            <p>My Projects</p>
-            <div className="home-banner-scroll-text">
+
+            {/* Heading Animation */}
+            <motion.div className="home-banner-scroll-text" variants={item}>
               <h1>
-                Fueling <br className="mobile" /> Creativity Into{" "}
-                <span>{words[currentWordIndex]}</span>
+                Experience the Impact of <br /> Thoughtful Design.
               </h1>
-            </div>
+            </motion.div>
+
+            {/* Description Animation */}
+            <motion.p className="footer-tagline" variants={item}>
+              Work grounded in insight, guided by process, and elevated<br className="desktop" />through design.
+            </motion.p>
           </section>
-          <p>
-            My journey as a UX designer, focused on transforming complex 
-            <br className="desktop" />
-            challenges into intuitive, user-centered solutions
-          </p>
+
+          {/* Button Animation */}
+          <motion.div
+            variants={item}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            <Link to="" className="home-case-btn hide">
+              view case studies <img src={ArrowForward} alt="arrow" />
+            </Link>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
-
-export default Banner;

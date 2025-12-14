@@ -1,36 +1,79 @@
-import React, { useState } from "react";
-import icon from "../../../assets/Projects/Page/Coolzee/icon.png";
-import banner from "../../../assets/Projects/Page/Coolzee/banner.png";
-import mobilebanner from "../../../assets/Projects/Page/Coolzee/mobile banner.png";
-import toolused from "../../../assets/Projects/Page/Coolzee/tool used.png";
-import overviewimg from "../../../assets/Projects/Page/Coolzee/overview img.png";
-import secondbanner from "../../../assets/Projects/Page/Coolzee/second banner.png";
-import mobilesecondbanner from "../../../assets/Projects/Page/Coolzee/mobile second banner.png";
-import thirdbanner1 from "../../../assets/Projects/Page/Coolzee/third banner 1.png";
-import thirdbanner2 from "../../../assets/Projects/Page/Coolzee/third banner 2.png";
-import bento11 from "../../../assets/Projects/Page/Coolzee/bento 1.1.png";
-import bento12 from "../../../assets/Projects/Page/Coolzee/bento 1.2.png";
-import bento13 from "../../../assets/Projects/Page/Coolzee/bento 1.3.png";
-import bento14 from "../../../assets/Projects/Page/Coolzee/bento 1.4.png";
-import bento15 from "../../../assets/Projects/Page/Coolzee/bento 1.5.png";
-import bento21 from "../../../assets/Projects/Page/Coolzee/bento 2.1.png";
-import bento22 from "../../../assets/Projects/Page/Coolzee/bento 2.2.png";
-import bento23 from "../../../assets/Projects/Page/Coolzee/bento 2.3.png";
-import bento24 from "../../../assets/Projects/Page/Coolzee/bento 2.4.png";
-import bento25 from "../../../assets/Projects/Page/Coolzee/bento 2.5.png";
-import bento26 from "../../../assets/Projects/Page/Coolzee/bento 2.6.png";
+/* eslint-disable no-unused-vars */
+import { motion, AnimatePresence } from "framer-motion";
+import BackgroundStars from "../../Backgroundsars";
+import icon from "../../../asset/Projects/Page/Coolzee/icon.webp";
+import banner from "../../../asset/Projects/Page/Coolzee/banner.webp";
+import mobilebanner from "../../../asset/Projects/Page/Coolzee/mobile banner.webp";
+import toolused from "../../../asset/Projects/Page/Coolzee/tool used.webp";
+import overviewimg from "../../../asset/Projects/Page/Coolzee/overview img.webp";
+import bento11 from "../../../asset/Projects/Page/Coolzee/bento 1.1.webp";
+import bento12 from "../../../asset/Projects/Page/Coolzee/bento 1.2.webp";
+import bento13 from "../../../asset/Projects/Page/Coolzee/bento 1.3.webp";
+import bento14 from "../../../asset/Projects/Page/Coolzee/bento 1.4.webp";
+import bento15 from "../../../asset/Projects/Page/Coolzee/bento 1.5.webp";
+import bento21 from "../../../asset/Projects/Page/Coolzee/bento 2.1.webp";
+import bento22 from "../../../asset/Projects/Page/Coolzee/bento 2.2.webp";
+import bento23 from "../../../asset/Projects/Page/Coolzee/bento 2.3.webp";
+import bento24 from "../../../asset/Projects/Page/Coolzee/bento 2.4.webp";
+import bento25 from "../../../asset/Projects/Page/Coolzee/bento 2.5.webp";
+import bento26 from "../../../asset/Projects/Page/Coolzee/bento 2.6.webp";
 
 function Coolzee() {
-  const [showMore, setShowMore] = useState(false);
-
-  const toggleShowMore = () => {
-    setShowMore((prev) => !prev);
+   const roles = [
+      "UX Research",
+      "UX Flow",
+      "Wireframing",
+      "Rapid Prototyping",
+      "Design Thinking",
+      "Design Systems",
+      "components",
+      "Interface Design",
+      "Visual Design",
+    ];
+  
+    const containerVariants = {
+      hidden: { opacity: 0 },
+      show: {
+        opacity: 1,
+        transition: { staggerChildren: 0.25 },
+      },
+    };
+  
+    const itemVariants = {
+      hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+      show: {
+        opacity: 1,
+        y: 0,
+        filter: "blur(0px)",
+        transition: { duration: 0.8, ease: "easeOut" },
+      },
+    };
+  
+    const contentVariants = {
+      hidden: { opacity: 0, y: 20 },
+      show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5, ease: "easeOut" }
+      },
+      exit: {
+        opacity: 0,
+        y: -20,
+        transition: { duration: 0.3 }
+      }
   };
 
   return (
-    <div className="pages-container">
-      <div className="about-project">
-        <div className="project-header">
+    <>
+    <motion.div 
+         className="pages-container"
+         initial="hidden"
+         animate="show"
+         variants={containerVariants}
+       >
+         <BackgroundStars />
+         <motion.div className="about-project" variants={itemVariants}>
+           <motion.div className="project-header" variants={itemVariants}>
           <div className="project-header-text-and-icon">
             <div className="project-header-icon">
               <img
@@ -43,7 +86,10 @@ function Coolzee() {
             </div>
             <div className="project-header-text">
               <h2>Coolzee</h2>
-              <p>Mobile Application</p>
+              <div style={{display: "flex", gap: "5px"}}>
+                <p>Mobile Application</p>
+                <p>2023</p>
+              </div>
             </div>
           </div>
           <div className="project-header-banner">
@@ -58,161 +104,75 @@ function Coolzee() {
               alt="Coolzee Banner"
             />
           </div>
-        </div>
-        <div className="project-sections-container">
-          <div className="project-overview">
-            <div className="project-overview-container">
-              <div className="project-overview-set">
-                <h3>Project Overview</h3>
-                <p>
-                  Coolzee is a smart home application designed to provide
-                  seamless control over home automation devices. It enables
-                  users to manage lighting, security, temperature, and
-                  appliances remotely through an intuitive interface.The app
-                  ensures a connected and effortless smart home experience for
-                  users.
-                </p>
-              </div>
-              <div className="project-overview-set" style={{ height: "100%" }}>
-                <h3>Key Takeaways</h3>
-                <p>
-                  Designing Coolzee was my first portfolio project and I focused
-                  on providing seamless smart home control for fans and other
-                  appliances. The app allows users to remotely adjust fan speed,
-                  turn devices on/off, and set timers effortlessly. It
-                  eliminates the hassle of physically accessing switches,
-                  ensuring convenience and energy efficiency. Additional
-                  features like LED light control, auto mode, and repair booking
-                  enhance the user experience. The final design delivers a
-                  smart, intuitive, and user-friendly home automation solution.
-                </p>
-              </div>
-            </div>
-            <div className="project-overview-container">
-              <div className="project-overview-set">
-                <h3>Tool Used</h3>
-                <div className="tool-used">
-                  <img src={toolused} />
-                  <section>
-                    <h4>Figma</h4>
-                    <p>Design Tool</p>
-                  </section>
-                </div>
-              </div>
-              <div className="project-overview-set">
-                <h3>Timeline</h3>
-                <h4>May 2023</h4>
-              </div>
-              <div className="project-overview-img">
-                <img src={overviewimg} />
-              </div>
-            </div>
-          </div>
-          <div className="project-second-banner">
-            <img src={secondbanner} className="desktop" />
-            <img src={mobilesecondbanner} className="mobile" />
-          </div>
-          <div className="project-points-container">
-            <h3>Problem Statement</h3>
-            <ul className="project-points-div desktop">
-              <li className="project-points">
-                Physically getting up to adjust the fan speed or turn it off is
-                inconvenient.
-              </li>
-              <li className="project-points">
-                Forgetting to turn off fans when leaving home leads to
-                unnecessary electricity usage.
-              </li>
-              <li className="project-points">
-                No option to schedule automatic fan control for better energy
-                efficiency.
-              </li>
-              <li className="project-points">
-                Lack of remote access to check the fan status from anywhere.
-              </li>
-              <li className="project-points">
-                No integrated system for tracking electricity usage and saving
-                energy.
-              </li>
-              <li className="project-points">
-                Difficulty in finding reliable electricians for fan repairs.
-              </li>
-            </ul>
-            <ul className="project-points-div mobile">
-              <li className="project-points">
-                Physically getting up to adjust the fan speed or turn it off is
-                inconvenient.
-              </li>
-              <li className="project-points">
-                Forgetting to turn off fans when leaving home leads to
-                unnecessary electricity usage.
-              </li>
-              <li className="project-points">
-                No option to schedule automatic fan control for better energy
-                efficiency.
-              </li>
-
-              {!showMore && (
-                <button className="primary-button" onClick={toggleShowMore}>
-                  See More
-                </button>
-              )}
-
-              {showMore && (
-                <>
-                  <li className="project-points">
-                    Lack of remote access to check the fan status from anywhere.
-                  </li>
-                  <li className="project-points">
-                    No integrated system for tracking electricity usage and
-                    saving energy.
-                  </li>
-                  <li className="project-points">
-                    Difficulty in finding reliable electricians for fan repairs.
-                  </li>
-                  <button className="primary-button" onClick={toggleShowMore}>
-                    See Less
-                  </button>
-                </>
-              )}
-            </ul>
-          </div>
-
-          <div className="project-points-container">
-            <h3>Goals</h3>
-            <ul className="project-points-div">
-              <li className="project-points">
-                Allow users to control their fans and appliances remotely
-                through the app.
-              </li>
-              <li className="project-points">
-                Introduce auto mode and electricity-saving features to optimize
-                usage.
-              </li>
-              <li className="project-points">
-                Enable easy booking of electricians and offer discounts for fan
-                repairs.
-              </li>
-            </ul>
-          </div>
-          <div className="project-third-banner">
-            <img src={thirdbanner1} />
-            <img src={thirdbanner2} />
-          </div>
-          <div className="project-journey">
-            <h3>The Journey</h3>
-            <p>
-              The journey of designing Coolzee started with researching user
-              challenges in managing home appliances. I identified key pain
-              points like manual control inconvenience, energy wastage, and
-              repair difficulties. Through ideation and iterations, I designed
-              an intuitive interface with remote access, automation, and service
-              booking. The final product ensures a smart, seamless, and
-              energy-efficient home experience for users.
-            </p>
-          </div>
-        </div>
-      </div>
+        </motion.div>
+        <motion.div className="project-sections-container" variants={itemVariants}>
+                  <div className="project-overview">
+                                  
+                        
+                                    <AnimatePresence mode="wait">
+                                      <motion.div
+                                        className="project-overview-content"
+                                        variants={contentVariants}
+                                        initial="hidden"
+                                        animate="show"
+                                        exit="exit"
+                                      >
+                                          <motion.div 
+                                            className="overview-content"
+                                            variants={containerVariants}
+                                            initial="hidden"
+                                            animate="show"
+                                          >
+                                            <motion.div className="project-overview-container" variants={itemVariants}>
+                                              <div className="project-overview-set">
+                                                <h3>PROJECT OVERVIEW</h3>
+                                                <p>
+                                                  Coolzee is a smart home application designed to simplify home automation control for modern households. It allows users to manage lighting, security, temperature, and appliances remotely from anywhere. The app offers an intuitive and seamless user interface for daily use. Coolzee delivers a connected, efficient, and effortless smart home experience overall.
+                                                </p>
+                                              </div>
+                                              <div className="project-overview-set">
+                                                <h3>MY ROLE</h3>
+                                                <div className="role-list-container">
+                                                  {roles.map((item, idx) => (
+                                                    <motion.div 
+                                                      key={idx} 
+                                                      className="industry-item"
+                                                      variants={itemVariants}
+                                                    >
+                                                      <div className="top-orange-blur"></div>
+                                                      {item}
+                                                      <div className="bottom-purple-blur"></div>
+                                                    </motion.div>
+                                                  ))}
+                                                </div>
+                                              </div>
+                                            </motion.div>
+                                            <motion.div className="project-overview-container" variants={itemVariants}>
+                                              <div className="project-overview-set">
+                                                <h3>TOOL USED</h3>
+                                                <div className="tool-used">
+                                                  <img src={toolused} />
+                                                  <section>
+                                                    <h4>Figma</h4>
+                                                    <p>Design Tool</p>
+                                                  </section>
+                                                </div>
+                                              </div>
+                                              <div className="project-overview-set">
+                                                <h3>TIMELINE</h3>
+                                                <h4>May 2023</h4>
+                                              </div>
+                                              <div className="project-overview-img">
+                                                <img src={overviewimg} />
+                                              </div>
+                                            </motion.div>
+                                          </motion.div>
+                        
+                                      </motion.div>
+                                    </AnimatePresence>
+                                  </div>
+                </motion.div>
+      </motion.div>
       <div className="project-bento">
         <div className="project-bento-container">
           <img src={bento11} />
@@ -230,16 +190,10 @@ function Coolzee() {
           <img src={bento26} />
         </div>
       </div>
-      <div className="project-link">
-        <h3>More on the Project</h3>
-        <a
-          href="https://www.behance.net/gallery/171755141/Coolzee-Smart-home-application-UI-design"
-          target="_blank"
-        >
-          Coolzee
-        </a>
-      </div>
-    </div>
+      
+      </motion.div>
+      <OtherProjects currentProject="coolzee" />
+      </>
   );
 }
 

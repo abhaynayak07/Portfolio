@@ -1,25 +1,23 @@
-import React from "react";
-import DesktopBackground from "../../assets/Contact/Marquee/Desktop Background.png";
-import AarogyaGuru from "../../assets/Contact/Marquee/Aarogya Guru.png";
-import CanvasCode from "../../assets/Contact/Marquee/Canvas & Code.png";
-import RentMyRide from "../../assets/Contact/Marquee/RentMyRide.png";
-import Coolzee from "../../assets/Contact/Marquee/Coolzee.png";
-import GoogleClassroom from "../../assets/Contact/Marquee/Google Classroom.png";
-import Ollie from "../../assets/Contact/Marquee/Ollie.png";
-import Whatsapp from "../../assets/Contact/Marquee/Whatsapp.png";
-import KITE from "../../assets/Contact/Marquee/KITE.png";
-import Cricbuzz from "../../assets/Contact/Marquee/Cricbuzz.png";
-import URBANMoneky from "../../assets/Contact/Marquee/URBAN Moneky.png";
-import Youtube from "../../assets/Contact/Marquee/Youtube.png";
+
+import AarogyaGuru from "../../asset/Contact/Marquee/Aarogya Guru.webp";
+import CanvasCode from "../../asset/Contact/Marquee/Canvas & Code.webp";
+import RentMyRide from "../../asset/Contact/Marquee/RentMyRide.webp";
+import Coolzee from "../../asset/Contact/Marquee/Coolzee.webp";
+import GoogleClassroom from "../../asset/Contact/Marquee/Google Classroom.webp";
+import Ollie from "../../asset/Contact/Marquee/Ollie.webp";
+import Whatsapp from "../../asset/Contact/Marquee/Whatsapp.webp";
+import KITE from "../../asset/Contact/Marquee/KITE.webp";
+import URBANMoneky from "../../asset/Contact/Marquee/URBAN Moneky.webp";
+import Youtube from "../../asset/Contact/Marquee/Youtube.webp";
 
 function Marquee() {
   return (
     <div className="home-marquee contact-marquee">
-      <img
+      {/* <img
         className="home-marquee-background"
         src={DesktopBackground}
         alt="Background"
-      />
+      /> */}
       <div className="home-marquee-container">
         <div className="marquee-wrapper">
           <div className="marquee-marquee">
