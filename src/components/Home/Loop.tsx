@@ -120,20 +120,20 @@ const Loop = () => {
             >
               <AnimatePresence mode="wait" custom={direction}>
                 <motion.div
-  key={index}
-  className="carousel-img-wrapper"
-  custom={direction}
-  variants={imageVariants}
-  initial="enter"
-  animate="center"
-  exit="exit"
->
-  <img
-    src={slides[index].img}
-    alt="slide"
-    className="carousel-img"
-  />
-</motion.div>
+                  key={index}
+                  className="carousel-img-wrapper"
+                  custom={direction}
+                  variants={imageVariants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                >
+                  <img
+                    src={slides[index].img}
+                    alt="slide"
+                    className="carousel-img"
+                  />
+                </motion.div>
               </AnimatePresence>
             </div>
 

@@ -1426,7 +1426,7 @@ header nav {
 .carousel-img-wrapper {
   width: 100%;
   max-width: 320px;
-  height: 360px; /* 👈 fixed height */
+  height: 400px; 
   display: flex;
   align-items: center;
   justify-content: center;
