@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import { Link } from "react-router-dom";
-import Resume from "/Abhay Nayak's CV.pdf";
+import Resume from "/Abhay Nayak-UX Designer-CV.pdf";
 import Menu from "../asset/Navbar/menu.webp";
 import MenuCancel from "../asset/Navbar/menu cancel.webp";
 import Arrow from "../asset/Navbar/arrow.webp";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -69,16 +70,29 @@ function Navbar() {
           <sub>UX Designer</sub>
         </Link>
         <nav className="desktop">
-          <Link to="/projects" className="primary-button">
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              `primary-button ${isActive ? "active-nav" : ""}`
+            }
+          >
             Projects
-          </Link>
+          </NavLink>
+
           <a href={Resume} target="_blank" className="primary-button">
             Resume
           </a>
-          <Link to="/contact" className="case-btn">
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              `nav-case-btn ${isActive ? "active-nav" : ""}`
+            }
+          >
             Contact
-          </Link>
+          </NavLink>
         </nav>
+
         <div className="mobile-navbar-button mobile" onClick={toggleMobileNav}>
           <img
             src={Menu}

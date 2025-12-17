@@ -57,11 +57,11 @@ const GlobeExperiance = () => {
               <p>Feb 2023</p>
             </div>
             <div className="stage-2">
-              <h4>Grew into a junior  <br />solving real problems</h4>
+              <h4>Grew into a junior designer <br />solving real problems</h4>
               <p>Jan 2024</p>
             </div>
             <div className="stage-3">
-              <h4>Evolved into a mid-level <br />shaping products</h4>
+              <h4>Evolved into a mid-level designer<br />shaping products</h4>
               <p>April 2025</p>
             </div>
             <div className="stage-4">

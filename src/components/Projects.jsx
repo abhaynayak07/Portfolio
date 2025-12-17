@@ -6,6 +6,8 @@ import { Helmet } from "react-helmet-async";
 import OtherProjects from "./Home/OtherProjects";
 import Story from "./Home/Story";
 import BackgroundStars from "./Backgroundsars"
+import Industries from "./Home/Industries";
+import Skill from "../components/Home/Skills";
 function Projects() {
   return (
     <>
@@ -18,11 +20,14 @@ function Projects() {
       </Helmet>
       <BackgroundStars />
       <Banner />
-      <Marquee />
+      <Industries />
       <ProjectsList />
+      <Marquee />
       <OtherProjects />
+      <Skill />
       <Story />
-    </>
+      </>
+   
   );
 }
 

@@ -202,7 +202,7 @@ function Projects() {
           <div className="projects-set-text">
             <p>Mobile Application</p>
             <section>
-              <h3>Save Life</h3>
+              <h3>Save Life - Blood Donation</h3>
               <sub>2025</sub>
             </section>
           </div>

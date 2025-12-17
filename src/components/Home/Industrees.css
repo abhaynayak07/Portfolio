@@ -32,10 +32,11 @@
   font-size: 16px;
   margin-top: 10px;
   opacity: 0.7;
+  color: #c1c1c1
 }
 
 .industries-list {
-  max-width: 800px;
+  max-width: 900px;
   margin: 40px auto;
   display: flex;
   flex-wrap: wrap;

@@ -63,8 +63,7 @@ const Skills = () => {
         </motion.h2>
 
         <motion.p variants={item}>
-          A mix of UX strategy, UI craft, and visual design expertise shaping every
-          project.
+          Where research, design thinking, and execution come together.
         </motion.p>
       </motion.div>
 

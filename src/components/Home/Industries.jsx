@@ -77,8 +77,7 @@ const Industries = () => {
         </motion.h2>
 
         <motion.p className="industries-subtext fade-delay" variants={item}>
-          A mix of UX strategy, UI craft, and visual design expertise shaping every
-          project.
+          Built products for every screen - responsive websites, mobile flows, and <br className="desktop"/> full app ecosystems.
         </motion.p>
       </motion.div>
 

@@ -1,10 +1,15 @@
 import ScrollReveal from "../ScrollReveal"
+// import DesktopBackground from "../../assets/Home/Experiences/Desktop Background.webp";
+// import MobileBackground from "../../assets/Home/Experiences/Mobile Background.webp";
 
 function Experiences() {
   return (
     <div className="experiences">
       {/* <img className="experiences-background desktop" src={DesktopBackground} />
       <img className="experiences-background mobile " src={MobileBackground} /> */}
+      <div className="white-blur-exp">
+          <div className="blur-ellips-exp"></div>
+        </div>
     
         <ScrollReveal
         baseOpacity={0}

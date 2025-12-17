@@ -7,19 +7,16 @@ import QEasy from "../../asset/Home/Projects/Q Easy.webp";
 import QEasyGlow from "../../asset/Home/Projects/Q Easy Background Glow.webp";
 import GoogleClassroom from "../../asset/Home/Projects/Google Classroom.webp";
 import GoogleClassroomBackgroundGlow from "../../asset/Home/Projects/Google Classroom Background Glow.webp";
-import CanvasCode from "../../asset/Home/Projects/Canvas & Code.webp";
-import CanvasCodeBackgroundGlow from "../../asset/Home/Projects/Canvas & Code Background Glow.webp";
-import OlliePets from "../../asset/Home/Projects/Ollie Pets.webp";
-import OlliePetsBackgroundGlow from "../../asset/Home/Projects/Ollie Pets Background Glow.webp";
 import AarogyaGuru from "../../asset/Home/Projects/Aarogya Guru.webp";
 import AarogyaGuruBackgroundGlow from "../../asset/Home/Projects/Aarogya Guru Background Glow.webp";
 import SaveLife from "../../asset/Projects/ProjectsList/Save Life.webp";
 import SaveLifeBackgroundGlow from "../../asset/Projects/ProjectsList/Save Life Background Glow.webp";
-import MobileProjectBackground from "../../asset/Home/Projects/MobileProjectBackground.webp"
 import DesktopProjectFade from "../../asset/Home/Projects/DesktopProjectFade.webp"
 import DesktopProjectVector from "../../asset/Home/Projects/DesktopProjectVector.webp"
 import MobileProjectVector from "../../asset/Home/Projects/MobileProjectVector.webp"
 import MobileProjectBlur from "../../asset/Home/Projects/MobileProjectBlur.webp"
+import KITE from "../../asset/Projects/ProjectsList/KITE.webp";
+import KITEBackgroundGlow from "../../asset/Projects/ProjectsList/KITE Background Glow.webp";
 import { motion } from "framer-motion";
 
 function Projects() {
@@ -51,7 +48,7 @@ function Projects() {
       link: "/projects/save_life",
       img: SaveLife,
       glow: SaveLifeBackgroundGlow,
-      title: "Save Life",
+      title: "Save Life - Blood Donation",
       sub: "2025",
       tag: "Mobile Application",
     },
@@ -81,28 +78,19 @@ function Projects() {
       hideOnMobile: true,
     },
     {
-      link: "/projects/canvas_and_code",
-      img: CanvasCode,
-      glow: CanvasCodeBackgroundGlow,
-      title: "Canvas & Code",
-      sub: "2023",
-      tag: "Website Design",
-      hideOnMobile: true,
-    },
-    {
-      link: "/projects/ollie_pets",
-      img: OlliePets,
-      glow: OlliePetsBackgroundGlow,
-      title: "Ollie Pets",
-      sub: "2023",
-      tag: "Website Design",
-      hideOnMobile: true,
-    },
-    {
       link: "/projects/aarogya_guru",
       img: AarogyaGuru,
       glow: AarogyaGuruBackgroundGlow,
       title: "Aarogya Guru",
+      sub: "2023",
+      tag: "Mobile Application",
+      hideOnMobile: true,
+    },
+    {
+      link: "/projects/kite_by_zerodha",
+      img: KITE,
+      glow: KITEBackgroundGlow,
+      title: "Kite by Zerodha",
       sub: "2023",
       tag: "Mobile Application",
       hideOnMobile: true,
@@ -289,8 +277,7 @@ function Projects() {
           </Link>
         ))}
       </div>
-
-      <div className={`view-more-wrapper fade-item ${visible ? "visible" : ""}`}
+      <div className={`mobile view-more-wrapper fade-item ${visible ? "visible" : ""}`}
            style={{ transitionDelay: "1200ms" }}>
         <Link to="/projects" className="case-btn">View More</Link>
       </div>
