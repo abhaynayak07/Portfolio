@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import { Link } from "react-router-dom";
-import Resume from "/Abhay Nayak-UX Designer-CV.pdf";
+import Resume from "/Abhay Nayak Resume.pdf";
 import Menu from "../asset/Navbar/menu.webp";
 import MenuCancel from "../asset/Navbar/menu cancel.webp";
 import Arrow from "../asset/Navbar/arrow.webp";
