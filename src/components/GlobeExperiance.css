@@ -313,7 +313,7 @@
     }
 
     .month-track.animate {
-    transform: translateY(calc(-1em - 9.5px));
+    transform: translateY(calc(-1em - 12px));
     }
 
 }
