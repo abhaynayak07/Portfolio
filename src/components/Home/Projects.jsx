@@ -5,8 +5,6 @@ import SchoolMate from "../../asset/Home/Projects/School Mate.webp";
 import SchoolMateGlow from "../../asset/Home/Projects/School Mate Background Glow.webp";
 import QEasy from "../../asset/Home/Projects/Q Easy.webp";
 import QEasyGlow from "../../asset/Home/Projects/Q Easy Background Glow.webp";
-import GoogleClassroom from "../../asset/Home/Projects/Google Classroom.webp";
-import GoogleClassroomBackgroundGlow from "../../asset/Home/Projects/Google Classroom Background Glow.webp";
 import AarogyaGuru from "../../asset/Home/Projects/Aarogya Guru.webp";
 import AarogyaGuruBackgroundGlow from "../../asset/Home/Projects/Aarogya Guru Background Glow.webp";
 import SaveLife from "../../asset/Projects/ProjectsList/Save Life.webp";
@@ -17,6 +15,8 @@ import MobileProjectVector from "../../asset/Home/Projects/MobileProjectVector.w
 import MobileProjectBlur from "../../asset/Home/Projects/MobileProjectBlur.webp"
 import KITE from "../../asset/Projects/ProjectsList/KITE.webp";
 import KITEBackgroundGlow from "../../asset/Projects/ProjectsList/KITE Background Glow.webp";
+import SaasDashboard from "../../asset/Home/Projects/SaasDashboardPanel.webp";
+import SaasDashboardGlow from "../../asset/Home/Projects/DashboardBlur.webp";
 import { motion } from "framer-motion";
 
 function Projects() {
@@ -53,6 +53,14 @@ function Projects() {
       tag: "Mobile Application",
     },
     {
+      link: "/projects/nirvana_health_care",
+      img: SaasDashboard,
+      glow: SaasDashboardGlow,
+      title: "Nirvaana Health Cares",
+      sub: "2025",
+      tag: "Saas Dashboard & Website Design",
+    },
+    {
       link: "/projects/school_mate",
       img: SchoolMate,
       glow: SchoolMateGlow,
@@ -67,15 +75,6 @@ function Projects() {
       title: "Q Easy",
       sub: "2025",
       tag: "Mobile Application",
-    },
-    {
-      link: "/projects/google_classroom",
-      img: GoogleClassroom,
-      glow: GoogleClassroomBackgroundGlow,
-      title: "Google Classroom",
-      sub: "2023",
-      tag: "Mobile Application",
-      hideOnMobile: true,
     },
     {
       link: "/projects/aarogya_guru",
@@ -277,7 +276,7 @@ function Projects() {
           </Link>
         ))}
       </div>
-      <div className={`mobile view-more-wrapper fade-item ${visible ? "visible" : ""}`}
+      <div className={`view-more-wrapper fade-item ${visible ? "visible" : ""}`}
            style={{ transitionDelay: "1200ms" }}>
         <Link to="/projects" className="case-btn">View More</Link>
       </div>

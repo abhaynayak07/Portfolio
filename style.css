@@ -3213,6 +3213,34 @@ header nav {
   border-radius: 16px;
 }
 
+.project-single-banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
+  border-radius: 16px;
+  border: 1px solid #232323;
+  background: linear-gradient(
+    93deg,
+    rgba(25, 25, 25, 0.5) 0.78%,
+    rgba(31, 31, 31, 0.5) 99.36%
+  );
+  align-self: stretch;
+}
+.project-single-banner img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.project-single-banner video{
+  width: 100%;
+  border-radius: 20px;
+}
+
 .project-points-container {
   width: 100%;
   display: flex;

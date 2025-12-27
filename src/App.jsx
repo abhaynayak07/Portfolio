@@ -20,6 +20,7 @@ import Coolzee from "./components/Projects/Pages/Coolzee";
 import UrbanMonkey from "./components/Projects/Pages/UrbanMonkey";
 import OlliePets from "./components/Projects/Pages/OlliePets";
 import SaveLife from "./components/Projects/Pages/SaveLife";
+import NirvanHealth from "./components/Projects/Pages/NirvanaHealthCare";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="projects" element={<Projects />} />
+            <Route path="projects/nirvana_health_care" element={<NirvanHealth />} />
             <Route path="projects/school_mate" element={<SchoolMate />} />
             <Route path="projects/q_easy" element={<QEasy />} />
             <Route

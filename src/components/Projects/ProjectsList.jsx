@@ -17,6 +17,8 @@ import DesktopProjectFade from "../../asset/Home/Projects/DesktopProjectFade.web
 import DesktopProjectVector from "../../asset/Home/Projects/DesktopProjectVector.webp"
 import MobileProjectVector from "../../asset/Home/Projects/MobileProjectVector.webp"
 import MobileProjectBlur from "../../asset/Home/Projects/MobileProjectBlur.webp"
+import SaasDashboard from "../../asset/Home/Projects/SaasDashboardPanel.webp";
+import SaasDashboardGlow from "../../asset/Home/Projects/DashboardBlur.webp";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 function Projects() {
@@ -194,6 +196,19 @@ function Projects() {
       </div>
     </div>
       <div className="projects-container">
+        <Link className="projects-set" to="/projects/nirvana_health_care">
+          <div className="projects-set-img">
+            <img src={SaasDashboard} className="main-img" />
+            <img src={SaasDashboardGlow} className="glow-img" />
+          </div>
+          <div className="projects-set-text">
+            <p>Saas Dashboard & Website Design</p>
+            <section>
+              <h3>Nirvaana Health Cares</h3>
+              <sub>2025</sub>
+            </section>
+          </div>
+        </Link>
         <Link className="projects-set" to="/projects/save_life">
           <div className="projects-set-img">
             <img src={SaveLife} className="main-img" />
@@ -233,19 +248,6 @@ function Projects() {
             </section>
           </div>
         </Link>
-        <Link className="projects-set" to="/projects/google_classroom">
-          <div className="projects-set-img">
-            <img src={GoogleClassroom} className="main-img" />
-            <img src={GoogleClassroomBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Mobile Application</p>
-            <section>
-              <h3>Google Classroom</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
         <Link className="projects-set" to="/projects/aarogya_guru">
           <div className="projects-set-img">
             <img src={AarogyaGuru} className="main-img" />
@@ -268,6 +270,19 @@ function Projects() {
             <p>Mobile Application</p>
             <section>
               <h3>Kite by Zerodha</h3>
+              <sub>2023</sub>
+            </section>
+          </div>
+        </Link>
+        <Link className="projects-set" to="/projects/google_classroom">
+          <div className="projects-set-img">
+            <img src={GoogleClassroom} className="main-img" />
+            <img src={GoogleClassroomBackgroundGlow} className="glow-img" />
+          </div>
+          <div className="projects-set-text">
+            <p>Mobile Application</p>
+            <section>
+              <h3>Google Classroom</h3>
               <sub>2023</sub>
             </section>
           </div>
