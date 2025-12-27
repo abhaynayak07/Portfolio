@@ -18,14 +18,13 @@ import NirvanaDemoVideo from "../../../asset/Projects/Page/NirvanaHealthCare/Nir
 import Bento10 from "../../../asset/Projects/Page/NirvanaHealthCare/Bento10.webp";
 import mobilebanner from "../../../asset/Projects/Page/NirvanaHealthCare/NirvanaBanner.webp";
 import toolused from "../../../asset/Projects/Page/Save Life/tool used.webp";
-import overviewimg from "../../../asset/Projects/Page/NirvanaHealthCare/OverviewImg.webp";
+import overviewimg from "../../../asset/Projects/Page/NirvanaHealthCare/OverviewImage.webp";
 import BackgroundStars from "../../Backgroundsars"
 import OtherCaseStudies from "../../Home/OtherCaseStudies";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
 
 function SaveLife() {
   const [activeTab, setActiveTab] = useState(0);
-
   const roles = [
     "UX Research",
     "UX Flow",
@@ -40,7 +39,6 @@ function SaveLife() {
     "Visual Design",
     "Typography",
   ];
-
   const tabs = [
     "OVERVIEW",
     "RESEARCH & DATA",
@@ -50,7 +48,6 @@ function SaveLife() {
     "HIGHLIGHTS",
   ];
 
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -195,13 +192,12 @@ function SaveLife() {
                         <h3>TIMELINE</h3>
                         <h4>December 2025</h4>
                       </div>
-                      <div className="project-overview-img">
+                        <div className="project-overview-img" style={{ padding: "20px" }}>
                         <img src={overviewimg} />
                       </div>
                     </motion.div>
                   </motion.div>
                 )}
-
                 {activeTab === 1 && (
                   <motion.div 
                     className="research-data-wrapper"
