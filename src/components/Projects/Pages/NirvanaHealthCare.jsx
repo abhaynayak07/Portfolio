@@ -13,15 +13,18 @@ import Bento7 from "../../../asset/Projects/Page/NirvanaHealthCare/Bento7.webp";
 import Bento8 from "../../../asset/Projects/Page/NirvanaHealthCare/Bento8.webp";
 import Bento9 from "../../../asset/Projects/Page/NirvanaHealthCare/Bento9.webp";
 import Bento11 from "../../../asset/Projects/Page/NirvanaHealthCare/Bento11.webp";
+import NirvanaLogoBanner from "../../../asset/Projects/Page/NirvanaHealthCare/NirvanaLogoBanner.webp";
+import Bento12Mobile from "../../../asset/Projects/Page/NirvanaHealthCare/Bento12Mob.webp";
 import Bento12 from "../../../asset/Projects/Page/NirvanaHealthCare/Bento12.webp";
 import NirvanaDemoVideo from "../../../asset/Projects/Page/NirvanaHealthCare/NirvanaDemoVideo.mp4";
 import Bento10 from "../../../asset/Projects/Page/NirvanaHealthCare/Bento10.webp";
-import mobilebanner from "../../../asset/Projects/Page/NirvanaHealthCare/NirvanaBanner.webp";
+import mobilebanner from "../../../asset/Projects/Page/NirvanaHealthCare/NirvanaMobileBanner.webp";
 import toolused from "../../../asset/Projects/Page/Save Life/tool used.webp";
 import overviewimg from "../../../asset/Projects/Page/NirvanaHealthCare/OverviewImage.webp";
 import BackgroundStars from "../../Backgroundsars"
 import OtherCaseStudies from "../../Home/OtherCaseStudies";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
+import ProjectVideo from "../../ProjectVideo";
 
 function SaveLife() {
   const [activeTab, setActiveTab] = useState(0);
@@ -496,7 +499,7 @@ function SaveLife() {
                           {[
                             { before: 85, after: 143, label: "Confidence" },
                             { before: 64, after: 130, label: "User Satisfaction" },
-                            { before: 28, after: 1109, label: "Trust Score" }
+                            { before: 28, after: 119, label: "Trust Score" }
                           ].map((chart, idx) => (
                             <motion.div
                               key={idx}
@@ -655,10 +658,12 @@ function SaveLife() {
           </div>
         </motion.div>
         </motion.div>
+
+        <ProjectVideo src={NirvanaDemoVideo}/>
         
-        <div className="project-single-banner">
+        {/* <div className="project-single-banner">
           <video src={NirvanaDemoVideo} muted autoPlay loop playsInline/>
-        </div>
+        </div> */}
       
       <div className="project-single-banner">
           <img src={Bento11}/>
@@ -666,13 +671,15 @@ function SaveLife() {
           <img src={Bento2} />
           <img src={Bento3} />
           <img src={Bento4} />
-          <img src={Bento12} />
+          <img src={Bento12} className="desktop"/>
+          <img src={Bento12Mobile} className="mobile"/>
           <img src={Bento5} />
           <img src={Bento6} />
           <img src={Bento7} />
           <img src={Bento8} />
           <img src={Bento9} />
           <img src={Bento10} />
+          <img src={NirvanaLogoBanner}/>
         </div>
         
 
