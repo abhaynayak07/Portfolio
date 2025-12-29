@@ -10,7 +10,9 @@ import secondbanner from "../../../asset/Projects/Page/Ollie Pets/second banner.
 import mobilesecondbanner from "../../../asset/Projects/Page/Ollie Pets/mobile second banner.webp";
 import thirdbanner1 from "../../../asset/Projects/Page/Ollie Pets/third banner 1.webp";
 import mobilethirdbanner1 from "../../../asset/Projects/Page/Ollie Pets/mobile third banner 1.webp";
+import OllieFullPage from "../../../asset/Projects/Page/Ollie Pets/OllieFullPage.webp"
 import thirdbanner2 from "../../../asset/Projects/Page/Ollie Pets/third banner 2.webp";
+import OllieBanner from "../../../asset/Projects/Page/Ollie Pets/Ollie Banner.webp"
 import OtherProjects from "../../Home/OtherProjects";
 
 function OlliePets() {
@@ -165,8 +167,9 @@ function OlliePets() {
                                   </div>
                 </motion.div>
       </motion.div>
-      <div className="project-second-banner">
-        <img src={thirdbanner2} />
+      <div className="project-single-banner">
+          <img src={OllieFullPage} />
+          <img src={OllieBanner} />
       </div>
       
       </motion.div>

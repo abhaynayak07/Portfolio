@@ -11,6 +11,8 @@ import mobilesecondbanner from "../../../asset/Projects/Page/Canvas And Code/mob
 import thirdbanner1 from "../../../asset/Projects/Page/Canvas And Code/third banner 1.webp";
 import mobilethirdbanner1 from "../../../asset/Projects/Page/Canvas And Code/mobile third banner 1.webp";
 import thirdbanner2 from "../../../asset/Projects/Page/Canvas And Code/third banner 2.webp";
+import CanvasFullPage from "../../../asset/Projects/Page/Canvas And Code/CanvasFullPage.webp"
+import CanvasBanner from "../../../asset/Projects/Page/Canvas And Code/Canvas and Code.webp";
 import OtherProjects from "../../Home/OtherProjects";
 
 function CanvasAndCode() {
@@ -164,8 +166,9 @@ function CanvasAndCode() {
                                   </div>
                 </motion.div>
       </motion.div>
-      <div className="project-second-banner">
-        <img src={thirdbanner2} />
+      <div className="project-single-banner">
+          <img src={CanvasFullPage} />
+          <img src={CanvasBanner} />
       </div>
       
       </motion.div>

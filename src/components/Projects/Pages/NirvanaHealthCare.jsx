@@ -107,7 +107,7 @@ function SaveLife() {
             <div className="project-header-text">
               <h2>Nirvana Health Cares</h2>
               <div style={{display: "flex", gap: "5px"}}>
-                <p>Website Design</p>
+                <p>SaaS Dashboard & Website Design</p>
                 <p>2025</p>
               </div>
             </div>
@@ -330,7 +330,6 @@ function SaveLife() {
                     </motion.div>
                   </motion.div>
                 )}
-
                 {activeTab === 2 && (
                   <motion.div
                     className="research-data-wrapper"
@@ -439,7 +438,6 @@ function SaveLife() {
                     </motion.div>
                   </motion.div>
                 )}
-
                 {activeTab === 3 && (
                   <motion.div 
                     className="timeline-container"
@@ -466,7 +464,6 @@ function SaveLife() {
                     ))}
                   </motion.div>
                 )}
-
                 {activeTab === 4 && (
                   <motion.div
                     className="results-wrapper"
@@ -606,7 +603,6 @@ function SaveLife() {
                     </motion.div>
                   </motion.div>
                 )}
-
                 {activeTab === 5 && (
                   <motion.div 
                     className="feature-wrapper"
@@ -657,14 +653,10 @@ function SaveLife() {
             </AnimatePresence>
           </div>
         </motion.div>
-        </motion.div>
+      </motion.div>
 
-        <ProjectVideo src={NirvanaDemoVideo}/>
+      <ProjectVideo src={NirvanaDemoVideo} />
         
-        {/* <div className="project-single-banner">
-          <video src={NirvanaDemoVideo} muted autoPlay loop playsInline/>
-        </div> */}
-      
       <div className="project-single-banner">
           <img src={Bento11}/>
           <img src={Bento1} />

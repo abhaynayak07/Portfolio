@@ -7,6 +7,8 @@ import mobilebanner from "../../../asset/Projects/Page/Urban Monkey/mobile banne
 import toolused from "../../../asset/Projects/Page/Urban Monkey/tool used.webp";
 import overviewimg from "../../../asset/Projects/Page/Urban Monkey/overview img.webp";
 import thirdbanner2 from "../../../asset/Projects/Page/Urban Monkey/third banner 2.webp";
+import UrbanBanner from "../../../asset/Projects/Page/Urban Monkey/Urbn Monkey banner.webp"
+import UrbanFullPage from "../../../asset/Projects/Page/Urban Monkey/UrbanFullPage.webp"
 import OtherProjects from "../../Home/OtherProjects";
 
 function UrbanMonkey() {
@@ -162,8 +164,9 @@ function UrbanMonkey() {
                           </div>
         </motion.div>
       </motion.div>
-      <div className="project-second-banner">
-        <img src={thirdbanner2} />
+      <div className="project-single-banner">
+          <img src={UrbanFullPage} />
+          <img src={UrbanBanner} />
       </div>
       
       </motion.div>

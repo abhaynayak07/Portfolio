@@ -2308,7 +2308,7 @@ header nav {
 }
 
 .line-chart-container label {
-  min-width: 93px;
+  min-width: 130px; 
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -2%;
@@ -2373,7 +2373,7 @@ header nav {
 
 .timeline-card {
   padding: 8px 16px;
-  width: fit-content;
+  width: 300px;
   background: linear-gradient(to right, #9F2D04, #520973);
   border-radius: 8px;
   color: white;
@@ -2834,7 +2834,7 @@ header nav {
     /* margin-left: calc(
       (var(--index) / (var(--total-items) - 1)) * (40%)
     ); */
-    width: fit-content;
+    width: 300px;
   }
 
   .timeline-card .title {
@@ -3216,7 +3216,7 @@ header nav {
 .project-single-banner {
   position: relative;
   width: 100%;
-  padding: 30px;
+  padding: 30px 100px;
   border-radius: 16px;
   border: 1px solid #232323;
   background: linear-gradient(
@@ -3225,6 +3225,15 @@ header nav {
     rgba(31, 31, 31, 0.5) 99.36%
   );
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
 }
 
 .project-video {
@@ -3235,12 +3244,15 @@ header nav {
 
 .video-overlay {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 60px; /* Leave space for progress bar */
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.35);
   transition: opacity 0.3s ease;
   pointer-events: none;
 }
@@ -3249,16 +3261,62 @@ header nav {
   opacity: 0;
 }
 
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.progress-time-display {
+  display: flex;
+  gap: 4px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+.project-single-banner video {
+  width: 100%;
+  border-radius: 20px;
+}
+
 .project-single-banner img {
   width: 100%;
   object-fit: cover;
   border-radius: 16px;
 }
 
-.project-single-banner video{
-  width: 100%;
-  border-radius: 20px;
-}
+
 
 .project-points-container {
   width: 100%;
