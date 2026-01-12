@@ -33,7 +33,7 @@ const GlobeExperiance = () => {
             2 Years <span className="month-wrapper">
               <span className={`month-track ${animateMonth ? "animate" : ""}`}>
                 <span className="month prev">09</span>
-                <span className="month curr">10</span>
+                <span className="month curr">11</span>
               </span>
             </span> Months
           </h2>

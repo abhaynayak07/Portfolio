@@ -44,6 +44,14 @@ function Projects() {
   const delay = (i) => ({ transitionDelay: `${200 + i * 120}ms` });
 
   const projectData = [
+  {
+      link: "/projects/nirvana_health_care",
+      img: SaasDashboard,
+      glow: SaasDashboardGlow,
+      title: "Nirvaana Health Cares",
+      sub: "2025",
+      tag: "Saas Dashboard & Website Design",
+    },
     {
       link: "/projects/save_life",
       img: SaveLife,
@@ -51,14 +59,6 @@ function Projects() {
       title: "Save Life - Blood Donation",
       sub: "2025",
       tag: "Mobile Application",
-    },
-    {
-      link: "/projects/nirvana_health_care",
-      img: SaasDashboard,
-      glow: SaasDashboardGlow,
-      title: "Nirvaana Health Cares",
-      sub: "2025",
-      tag: "Saas Dashboard & Website Design",
     },
     {
       link: "/projects/school_mate",

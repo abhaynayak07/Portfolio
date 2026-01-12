@@ -5041,6 +5041,10 @@ footer.footer {
     justify-content: center;
   }
 
+  .project-single-banner {
+    padding: 10px 10px;
+  }
+
   .project-single-banner img {
     border-radius: 8px;
   }

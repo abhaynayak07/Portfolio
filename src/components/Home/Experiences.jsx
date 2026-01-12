@@ -17,7 +17,7 @@ function Experiences() {
         baseRotation={5}
         blurStrength={10}
       >
-        I’m a hands-on UX/UI designer who turns ideas into clear, functional, and delightful products. Over the years, I’ve worked across diverse industries from SaaS, travel, fintech, e-commerce, AI, healthcare, and more. Designing for multiple user types, devices, and interactions, including micro-animations.
+        I’m a UX/UI designer turning complex ideas into clear, intuitive web and mobile products. Over the years, I’ve designed B2B dashboards, SaaS platforms, and consumer-facing apps and websites across fintech, healthcare, e-commerce, travel, and more. My work spans multiple user types, devices, and interactions, delivering solutions that delight users, meet goals and drive measurable impact.
       </ScrollReveal>
     </div>
   );

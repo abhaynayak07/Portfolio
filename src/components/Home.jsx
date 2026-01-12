@@ -25,10 +25,10 @@ function Home() {
       </Helmet>
         <BackgroundStars /> 
       <Banner />
-      <Industries />
       <Experiences />
       <GlobeExperiance />
       <Projects />
+      <Industries />
       <Marquee />
       <OtherProjects />
       <Skills />

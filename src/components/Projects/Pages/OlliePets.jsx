@@ -161,7 +161,6 @@ function OlliePets() {
                                               </div>
                                             </motion.div>
                                           </motion.div>
-                        
                                       </motion.div>
                                     </AnimatePresence>
                                   </div>
