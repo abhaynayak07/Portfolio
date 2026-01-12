@@ -76,24 +76,6 @@ function Projects() {
       sub: "2025",
       tag: "Mobile Application",
     },
-    {
-      link: "/projects/aarogya_guru",
-      img: AarogyaGuru,
-      glow: AarogyaGuruBackgroundGlow,
-      title: "Aarogya Guru",
-      sub: "2023",
-      tag: "Mobile Application",
-      hideOnMobile: true,
-    },
-    {
-      link: "/projects/kite_by_zerodha",
-      img: KITE,
-      glow: KITEBackgroundGlow,
-      title: "Kite by Zerodha",
-      sub: "2023",
-      tag: "Mobile Application",
-      hideOnMobile: true,
-    },
   ];
 
   return (

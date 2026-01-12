@@ -17,7 +17,9 @@ function Experiences() {
         baseRotation={5}
         blurStrength={10}
       >
-        I’m a UX/UI designer turning complex ideas into clear, intuitive web and mobile products. Over the years, I’ve designed B2B dashboards, SaaS platforms, and consumer-facing apps and websites across fintech, healthcare, e-commerce, travel, and more. My work spans multiple user types, devices, and interactions, delivering solutions that delight users, meet goals and drive measurable impact.
+I'm a UX/UI and Visual Designer with 3 years of experience designing B2B Saas, admin panels, transactional platforms, and responsive web products. I focus on simplifying complex workflows, improving system usability, and designing interfaces that support operational clarity. I’ve worked on data-heavy dashboards, admin tools, and user-facing platforms across web and mobile.
+
+I collaborate closely with product, engineering, and business teams to translate requirements into scalable, usable design solutions.
       </ScrollReveal>
     </div>
   );

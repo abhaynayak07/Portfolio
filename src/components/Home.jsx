@@ -28,10 +28,10 @@ function Home() {
       <Experiences />
       <GlobeExperiance />
       <Projects />
-      <Industries />
+      <Skills />
       <Marquee />
       <OtherProjects />
-      <Skills />
+      <Industries />
       <Loop />
       <Glimpse />
       <Story />
