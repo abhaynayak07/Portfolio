@@ -25,6 +25,7 @@ function Projects() {
       <Marquee />
       <OtherProjects /> */}
       <Skill />
+      <Glimpse />
       <Story />
       </>
    

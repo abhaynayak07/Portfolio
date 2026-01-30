@@ -30,7 +30,7 @@ function Home() {
       <GlobeExperiance />
       <Projects />
       <Skill/>
-      <Skills />
+      {/* <Skills /> */}
       {/* <Marquee /> */}
       {/* <OtherProjects /> */}
       {/* <Industries />
