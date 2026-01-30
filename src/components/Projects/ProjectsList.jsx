@@ -248,7 +248,7 @@ function Projects() {
             </section>
           </div>
         </Link>
-        <Link className="projects-set" to="/projects/aarogya_guru">
+        {/* <Link className="projects-set" to="/projects/aarogya_guru">
           <div className="projects-set-img">
             <img src={AarogyaGuru} className="main-img" />
             <img src={AarogyaGuruBackgroundGlow} className="glow-img" />
@@ -286,7 +286,7 @@ function Projects() {
               <sub>2023</sub>
             </section>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

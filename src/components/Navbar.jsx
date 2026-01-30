@@ -67,7 +67,7 @@ function Navbar() {
       <section>
         <Link to="/" className="navbar-logo" onClick={handleLinkClick}>
           <p>Abhay Nayak</p>
-          <sub>UX Designer</sub>
+          <sub>Product Designer</sub>
         </Link>
         <nav className="desktop">
           <NavLink

@@ -26,7 +26,7 @@ import OtherCaseStudies from "../../Home/OtherCaseStudies";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
 import ProjectVideo from "../../ProjectVideo";
 
-function SaveLife() {
+function NirvanaHealthCare() {
   const [activeTab, setActiveTab] = useState(0);
   const roles = [
     "UX Research",
@@ -45,10 +45,10 @@ function SaveLife() {
   const tabs = [
     "OVERVIEW",
     "RESEARCH & DATA",
-    "PAIN POINTS",
+    "USER FRICTIONS",
     "ROADMAP",
     "METRICS & OUTCOMES",
-    "HIGHLIGHTS",
+    "KEY TAKEAWAYS",
   ];
 
   const containerVariants = {
@@ -677,9 +677,9 @@ function SaveLife() {
 
       
       </motion.div>
-      <OtherCaseStudies currentProject="savelife" />
+      <OtherCaseStudies currentProject="nirvanahealth" />
       </>
   );
 }
 
-export default SaveLife;
+export default NirvanaHealthCare;

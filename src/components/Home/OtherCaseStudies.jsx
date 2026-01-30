@@ -12,6 +12,8 @@ import SaveLife from "../../asset/Projects/ProjectsList/Save Life.webp";
 import SaveLifeBackgroundGlow from "../../asset/Projects/ProjectsList/Save Life Background Glow.webp";
 import QEasy from "../../asset/Home/Projects/Q Easy.webp";
 import QEasyGlow from "../../asset/Home/Projects/Q Easy Background Glow.webp";
+import NirvanaHealthCare from "../../asset/Projects/ProjectsList/SaasDashboardPanel.webp";
+import NirvanaHealthCareBackgroundGlow from "../../asset/Projects/ProjectsList/DashboardBlur.webp";
 import GoogleClassroom from "../../asset/Home/Projects/Google Classroom.webp";
 import GoogleClassroomBackgroundGlow from "../../asset/Home/Projects/Google Classroom Background Glow.webp";
 import OtherProjectsMobileBackground from "../../asset/Home/OtherProjects/OtherProjectsobileBackground.webp";
@@ -27,6 +29,15 @@ const OtherCaseStudies = ({ currentProject }) => {
     };
 
     const projects = [
+        {
+        id: "nirvanahealth",
+        link: "/projects/nirvana_health_care",
+        title: "Nirvana Health Care",
+        year: "2025",
+        type: "Mobile Application",
+        img: NirvanaHealthCare,
+        glow: NirvanaHealthCareBackgroundGlow,
+    },
     {
         id: "savelife",
         link: "/projects/save_life",
@@ -54,33 +65,33 @@ const OtherCaseStudies = ({ currentProject }) => {
         img: QEasy,
         glow: QEasyGlow,
     },
-    {
-        id: "googleclassroom",
-        link: "/projects/google_classroom",
-        title: "Google Classroom",
-        year: "2023",
-        type: "Mobile Application",
-        img: GoogleClassroom,
-        glow: GoogleClassroomBackgroundGlow,
-    },
-    {
-        id: "aarogyaguru",
-        link: "/projects/aarogya_guru",
-        title: "Aarogya Guru",
-        year: "2023",
-        type: "Mobile Application",
-        img: AarogyaGuru,
-        glow: AarogyaGuruBackgroundGlow,
-    },
-    {
-        id: "kite",
-        link: "/projects/kite_by_zerodha",
-        title: "Kite by Zerodha",
-        year: "2023",
-        type: "Mobile Application",
-        img: KITE,
-        glow: KITEBackgroundGlow,
-    },
+    // {
+    //     id: "googleclassroom",
+    //     link: "/projects/google_classroom",
+    //     title: "Google Classroom",
+    //     year: "2023",
+    //     type: "Mobile Application",
+    //     img: GoogleClassroom,
+    //     glow: GoogleClassroomBackgroundGlow,
+    // },
+    // {
+    //     id: "aarogyaguru",
+    //     link: "/projects/aarogya_guru",
+    //     title: "Aarogya Guru",
+    //     year: "2023",
+    //     type: "Mobile Application",
+    //     img: AarogyaGuru,
+    //     glow: AarogyaGuruBackgroundGlow,
+    // },
+    // {
+    //     id: "kite",
+    //     link: "/projects/kite_by_zerodha",
+    //     title: "Kite by Zerodha",
+    //     year: "2023",
+    //     type: "Mobile Application",
+    //     img: KITE,
+    //     glow: KITEBackgroundGlow,
+    // },
     ];
 
     const filteredProjects = projects.filter(

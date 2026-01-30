@@ -5,16 +5,12 @@ import SchoolMate from "../../asset/Home/Projects/School Mate.webp";
 import SchoolMateGlow from "../../asset/Home/Projects/School Mate Background Glow.webp";
 import QEasy from "../../asset/Home/Projects/Q Easy.webp";
 import QEasyGlow from "../../asset/Home/Projects/Q Easy Background Glow.webp";
-import AarogyaGuru from "../../asset/Home/Projects/Aarogya Guru.webp";
-import AarogyaGuruBackgroundGlow from "../../asset/Home/Projects/Aarogya Guru Background Glow.webp";
 import SaveLife from "../../asset/Projects/ProjectsList/Save Life.webp";
 import SaveLifeBackgroundGlow from "../../asset/Projects/ProjectsList/Save Life Background Glow.webp";
 import DesktopProjectFade from "../../asset/Home/Projects/DesktopProjectFade.webp"
 import DesktopProjectVector from "../../asset/Home/Projects/DesktopProjectVector.webp"
 import MobileProjectVector from "../../asset/Home/Projects/MobileProjectVector.webp"
 import MobileProjectBlur from "../../asset/Home/Projects/MobileProjectBlur.webp"
-import KITE from "../../asset/Projects/ProjectsList/KITE.webp";
-import KITEBackgroundGlow from "../../asset/Projects/ProjectsList/KITE Background Glow.webp";
 import SaasDashboard from "../../asset/Home/Projects/SaasDashboardPanel.webp";
 import SaasDashboardGlow from "../../asset/Home/Projects/DashboardBlur.webp";
 import { motion } from "framer-motion";
@@ -258,10 +254,10 @@ function Projects() {
           </Link>
         ))}
       </div>
-      <div className={`view-more-wrapper fade-item ${visible ? "visible" : ""}`}
+      {/* <div className={`view-more-wrapper fade-item ${visible ? "visible" : ""}`}
            style={{ transitionDelay: "1200ms" }}>
         <Link to="/projects" className="case-btn">View More</Link>
-      </div>
+      </div> */}
     </div>
   );
 }

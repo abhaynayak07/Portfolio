@@ -47,10 +47,10 @@ function AarogyaGuru() {
     const tabs = [
       "OVERVIEW",
       "RESEARCH & DATA",
-      "PAIN POINTS",
+      "USER FRICTIONS",
       "ROADMAP",
       "METRICS & OUTCOMES",
-      "HIGHLIGHTS",
+      "KEY TAKEAWAYS",
     ];
   
     // Animation variants

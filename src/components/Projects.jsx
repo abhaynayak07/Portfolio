@@ -21,9 +21,9 @@ function Projects() {
       <BackgroundStars />
       <Banner />
       <ProjectsList />
-      <Industries />
+      {/* <Industries />
       <Marquee />
-      <OtherProjects />
+      <OtherProjects /> */}
       <Skill />
       <Story />
       </>

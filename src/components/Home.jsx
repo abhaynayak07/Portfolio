@@ -29,10 +29,10 @@ function Home() {
       <GlobeExperiance />
       <Projects />
       <Skills />
-      <Marquee />
-      <OtherProjects />
-      <Industries />
-      <Loop />
+      {/* <Marquee /> */}
+      {/* <OtherProjects /> */}
+      {/* <Industries />
+      <Loop /> */}
       <Glimpse />
       <Story />
     </>
