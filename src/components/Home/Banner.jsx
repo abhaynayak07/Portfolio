@@ -51,14 +51,13 @@ export default function Banner() {
             {/* #2 Heading Animation */}
             <motion.div className="home-banner-scroll-text" variants={item}>
               <h1>
-                Where Research & Design <br /> Create Impact.
+                Where User Insight Meets <br /> Scalable Product Design
               </h1>
             </motion.div>
 
             {/* #3 Description Animation */}
             <motion.p className="footer-tagline" variants={item}>
-              UX/UI & Visual Designer focused on turning complex
-              challenges into simple, impactful experiences.
+              Research-driven design focused on clarity, scale, and user outcomes.
             </motion.p>
           </section>
 

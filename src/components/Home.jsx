@@ -9,6 +9,7 @@ import Story from "./Home/Story";
 import Industries from "./Home/Industries";
 import OtherProjects from "./Home/OtherProjects";
 import Skills from "./Home/Skills";
+import Skill from "./Home/Skill";
 import Loop from "../components/Home/Loop"
 import BackgroundStars from "./Backgroundsars"
 import GlobeExperiance from "./GlobeExperiance"
@@ -23,11 +24,12 @@ function Home() {
           content="I’m Abhay Nayak, a UX Designer passionate about building meaningful and intuitive user experiences. Explore my portfolio and UX case studies."
         />
       </Helmet>
-        <BackgroundStars /> 
+      <BackgroundStars /> 
       <Banner />
       <Experiences />
       <GlobeExperiance />
       <Projects />
+      <Skill/>
       <Skills />
       {/* <Marquee /> */}
       {/* <OtherProjects /> */}

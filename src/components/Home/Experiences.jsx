@@ -17,9 +17,7 @@ function Experiences() {
         baseRotation={5}
         blurStrength={10}
       >
-I'm a UX/UI and Visual Designer with 3 years of experience designing B2B Saas, admin panels, transactional platforms, and responsive web products. I focus on simplifying complex workflows, improving system usability, and designing interfaces that support operational clarity. I’ve worked on data-heavy dashboards, admin tools, and user-facing platforms across web and mobile.
-
-I collaborate closely with product, engineering, and business teams to translate requirements into scalable, usable design solutions.
+        Product Designer with experience working across end-to-end design processes from user research and journey mapping to interaction design and quality execution. I collaborate closely with engineers and product teams to design scalable, system-driven solutions for complex problems. My work focuses on clarity, usability, and measurable outcomes, balancing user needs with technical and business constraints.
       </ScrollReveal>
     </div>
   );

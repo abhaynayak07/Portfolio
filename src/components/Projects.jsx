@@ -7,7 +7,7 @@ import OtherProjects from "./Home/OtherProjects";
 import Story from "./Home/Story";
 import BackgroundStars from "./Backgroundsars"
 import Industries from "./Home/Industries";
-import Skill from "../components/Home/Skills";
+import Skill from "../components/Home/Skill";
 function Projects() {
   return (
     <>

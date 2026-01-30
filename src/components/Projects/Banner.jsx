@@ -54,13 +54,14 @@ export default function Banner() {
             {/* Heading Animation */}
             <motion.div className="home-banner-scroll-text" variants={item}>
               <h1>
-                Experience the Impact of <br /> Thoughtful Design.
+                A Research-Led Approach to <br /> Solving Real Product Problems
               </h1>
             </motion.div>
 
             {/* Description Animation */}
             <motion.p className="footer-tagline" variants={item}>
-              Work grounded in insight, guided by process, and elevated<br className="desktop" />through design.
+              From problem framing and exploration to interaction design and outcomes.
+              {/* Work grounded in insight, guided by process, and elevated<br className="desktop" />through design. */}
             </motion.p>
           </section>
 
