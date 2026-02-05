@@ -1,41 +1,44 @@
 import "./GlobeExperiance.css"
-import { useEffect, useRef, useState } from "react";
+// import { useEffect, useRef, useState } from "react";
 
 const GlobeExperiance = () => {
-  const titleRef = useRef(null);
-  const [animateMonth, setAnimateMonth] = useState(false);
+  // const titleRef = useRef(null);
+  // const [animateMonth, setAnimateMonth] = useState(false);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setAnimateMonth(true);
-          observer.disconnect(); 
-        }
-      },
-      {
-        root: null,
-        threshold: 0,
-        rootMargin: "0px 0px -20% 0px", 
-      }
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       if (entry.isIntersecting) {
+  //         setAnimateMonth(true);
+  //         observer.disconnect(); 
+  //       }
+  //     },
+  //     {
+  //       root: null,
+  //       threshold: 0,
+  //       rootMargin: "0px 0px -20% 0px", 
+  //     }
+  //   );
 
-    if (titleRef.current) observer.observe(titleRef.current);
+  //   if (titleRef.current) observer.observe(titleRef.current);
 
-    return () => observer.disconnect();
-  }, []);
+  //   return () => observer.disconnect();
+  // }, []);
 
   return (
     <>
       <div className="globe-exp-wrapper">
-        <div className="globe-header-container" ref={titleRef}>
+        <div className="globe-header-container"
+          // ref={titleRef}
+        >
           <h2 className="industries-title">
-            3 Years <span className="month-wrapper">
+            3 Years
+            {/* <span className="month-wrapper">
               <span className={`month-track ${animateMonth ? "animate" : ""}`}>
                 <span className="month prev">0</span>
                 <span className="month curr">0</span>
               </span>
-            </span> Months
+            </span> Months */}
           </h2>
           <p>AND GROWING</p>
         </div>
