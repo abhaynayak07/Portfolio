@@ -30,10 +30,10 @@ const GlobeExperiance = () => {
       <div className="globe-exp-wrapper">
         <div className="globe-header-container" ref={titleRef}>
           <h2 className="industries-title">
-            2 Years <span className="month-wrapper">
+            3 Years <span className="month-wrapper">
               <span className={`month-track ${animateMonth ? "animate" : ""}`}>
-                <span className="month prev">10</span>
-                <span className="month curr">11</span>
+                <span className="month prev">0</span>
+                <span className="month curr">0</span>
               </span>
             </span> Months
           </h2>
