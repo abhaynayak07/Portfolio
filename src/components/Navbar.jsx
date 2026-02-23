@@ -76,12 +76,12 @@ function Navbar() {
               `primary-button ${isActive ? "active-nav" : ""}`
             }
           >
-            Projects
+            Case Studies
           </NavLink>
 
-          <a href={Resume} target="_blank" className="primary-button">
+          {/* <a href={Resume} target="_blank" className="primary-button">
             Resume
-          </a>
+          </a> */}
 
           <NavLink
             to="/contact"

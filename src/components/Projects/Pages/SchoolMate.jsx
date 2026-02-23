@@ -22,6 +22,11 @@ import bento27 from "../../../asset/Projects/Page/School Mate/bento 2.7.webp";
 import BackgroundStars from "../../Backgroundsars";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
 import OtherCaseStudies from "../../Home/OtherCaseStudies";
+import SchoolmateContainer1 from "../../../asset/Projects/Page/School Mate/SchoolmateContainer1.png"
+import SchoolmateContainer2 from "../../../asset/Projects/Page/School Mate/SchoolmateContainer2.png"
+import SchoolmateContainer3 from "../../../asset/Projects/Page/School Mate/SchoolmateContainer3.png"
+import SchoolmateContainer4 from "../../../asset/Projects/Page/School Mate/SchoolmateContainer4.png"
+import SchoolmateContainer5 from "../../../asset/Projects/Page/School Mate/SchoolmateContainer5.png"
 
 function SchoolMate() {
   const [activeTab, setActiveTab] = useState(0);
@@ -651,6 +656,18 @@ function SchoolMate() {
                   </div>
         </motion.div>
       </motion.div>
+
+        <div className="project-bento-container">
+                  <img src={SchoolmateContainer1} />
+                  <img src={SchoolmateContainer2} />
+        
+                  {/* grid section */}
+                  <div className="savelife-grid">
+                    <img src={SchoolmateContainer3} />
+                    <img src={SchoolmateContainer4} />
+                    <img src={SchoolmateContainer5} />
+                  </div>
+                </div>
       <div className="project-bento">
         <div className="project-bento-container">
           <img src={bento11} />

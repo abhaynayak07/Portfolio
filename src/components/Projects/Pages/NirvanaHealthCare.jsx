@@ -25,6 +25,11 @@ import BackgroundStars from "../../Backgroundsars"
 import OtherCaseStudies from "../../Home/OtherCaseStudies";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
 import ProjectVideo from "../../ProjectVideo";
+import NirvanaContainer1 from "../../../asset/Projects/Page/NirvanaHealthCare/NirvanaContainer1.png";
+import NirvanaContainer2 from "../../../asset/Projects/Page/NirvanaHealthCare/NirvanaContainer2.png";
+import NirvanaContainer3 from "../../../asset/Projects/Page/NirvanaHealthCare/NirvanaContainer3.png";
+import NirvanaContainer4 from "../../../asset/Projects/Page/NirvanaHealthCare/NirvanaContainer4.png";
+import NirvanaContainer5 from "../../../asset/Projects/Page/NirvanaHealthCare/NirvanaContainer5.png";
 
 function NirvanaHealthCare() {
   const [activeTab, setActiveTab] = useState(0);
@@ -655,7 +660,19 @@ function NirvanaHealthCare() {
         </motion.div>
       </motion.div>
 
-      <ProjectVideo src={NirvanaDemoVideo} />
+        <ProjectVideo src={NirvanaDemoVideo} />
+        
+        <div className="project-bento-container">
+                  <img src={NirvanaContainer1} />
+                  <img src={NirvanaContainer2} />
+        
+                  {/* grid section */}
+                  <div className="savelife-grid">
+                    <img src={NirvanaContainer3} />
+                    <img src={NirvanaContainer4} />
+                    <img src={NirvanaContainer5} />
+                  </div>
+                </div>
         
       <div className="project-single-banner">
           <img src={Bento11}/>

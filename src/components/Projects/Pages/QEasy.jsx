@@ -16,6 +16,11 @@ import bento24 from "../../../asset/Projects/Page/Q Easy/bento 2.4.webp";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
 import BackgroundStars from "../../Backgroundsars"
 import OtherCaseStudies from "../../Home/OtherCaseStudies";
+import QeasyContainer1 from "../../../asset/Projects/Page/Q Easy/QeasyContainer1.png"
+import QeasyContainer2 from "../../../asset/Projects/Page/Q Easy/QeasyContainer2.png"
+import QeasyContainer3 from "../../../asset/Projects/Page/Q Easy/QeasyContainer3.png"
+import QeasyContainer4 from "../../../asset/Projects/Page/Q Easy/QeasyContainer4.png"
+import QeasyContainer5 from "../../../asset/Projects/Page/Q Easy/QeasyContainer5.png"
 
 function QEasy() {
   const [activeTab, setActiveTab] = useState(0);
@@ -650,7 +655,18 @@ function QEasy() {
                     </AnimatePresence>
                   </div>
                 </motion.div>
-      </motion.div>
+        </motion.div>
+        <div className="project-bento-container">
+                  <img src={QeasyContainer1} />
+                  <img src={QeasyContainer2} />
+        
+                  {/* grid section */}
+                  <div className="savelife-grid">
+                    <img src={QeasyContainer3} />
+                    <img src={QeasyContainer4} />
+                    <img src={QeasyContainer5} />
+                  </div>
+                </div>
       <div className="project-bento">
         <div className="project-bento-container">
           <img src={bento11} />
