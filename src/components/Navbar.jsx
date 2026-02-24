@@ -81,7 +81,7 @@ function Navbar() {
 
           {/* <a href={Resume} target="_blank" className="primary-button">
             Resume
-          </a> */}
+          </a>  */}
 
           <NavLink
             to="/contact"
@@ -121,13 +121,13 @@ function Navbar() {
       >
         <nav>
           <Link to="projects" onClick={toggleMobileNav}>
-            <p>Projects</p>
+            <p>Case Studies</p>
             <img src={Arrow} />
           </Link>
-          <a href={Resume} target="_blank" onClick={toggleMobileNav}>
+          {/* <a href={Resume} target="_blank" onClick={toggleMobileNav}>
             <p>Resume</p>
             <img src={Arrow} />
-          </a>
+          </a> */}
         </nav>
         <div className="mobile-nav-down">
           <Link

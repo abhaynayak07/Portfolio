@@ -8,6 +8,7 @@ import Story from "./Home/Story";
 import BackgroundStars from "./Backgroundsars"
 import Industries from "./Home/Industries";
 import Skill from "../components/Home/Skill";
+import Glimpse from "./Home/Glimpse";
 function Projects() {
   return (
     <>
