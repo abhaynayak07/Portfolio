@@ -27,6 +27,9 @@ import SchoolmateContainer2 from "../../../asset/Projects/Page/School Mate/Schoo
 import SchoolmateContainer3 from "../../../asset/Projects/Page/School Mate/SchoolmateContainer3.png"
 import SchoolmateContainer4 from "../../../asset/Projects/Page/School Mate/SchoolmateContainer4.png"
 import SchoolmateContainer5 from "../../../asset/Projects/Page/School Mate/SchoolmateContainer5.png"
+import SchoolmateContainer6 from "../../../asset/Projects/Page/School Mate/SchoolmateContainer6.png"
+import SchoolmateContainer7 from "../../../asset/Projects/Page/School Mate/SchoolmateContainer7.png"
+import SchoolmateContainer8 from "../../../asset/Projects/Page/School Mate/SchoolmateContainer8.png"
 
 function SchoolMate() {
   const [activeTab, setActiveTab] = useState(0);
@@ -667,6 +670,10 @@ function SchoolMate() {
                     <img src={SchoolmateContainer4} />
                     <img src={SchoolmateContainer5} />
                   </div>
+          
+                  <img src={SchoolmateContainer6} />
+                  <img src={SchoolmateContainer7} />
+                  <img src={SchoolmateContainer8} />
                 </div>
       <div className="project-bento">
         <div className="project-bento-container">
