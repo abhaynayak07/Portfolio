@@ -19,6 +19,7 @@ import MobileProjectVector from "../../asset/Home/Projects/MobileProjectVector.w
 import MobileProjectBlur from "../../asset/Home/Projects/MobileProjectBlur.webp"
 import SaasDashboard from "../../asset/Home/Projects/SaasDashboardPanel.webp";
 import SaasDashboardGlow from "../../asset/Home/Projects/DashboardBlur.webp";
+import FigmaDashboard from "../../asset/Home/Projects/FigmaDashboard.webp";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 function Projects() {
@@ -196,6 +197,19 @@ function Projects() {
       </div>
     </div>
       <div className="projects-container">
+        <Link className="projects-set" to="/projects/figma_status_logs">
+          <div className="projects-set-img">
+            <img src={FigmaDashboard} className="main-img" />
+            <img src={SaasDashboardGlow} className="glow-img" />
+          </div>
+          <div className="projects-set-text">
+            <p>Website Design</p>
+            <section>
+              <h3>Figma - Status & Logs</h3>
+              <sub>2026</sub>
+            </section>
+          </div>
+        </Link>
         <Link className="projects-set" to="/projects/nirvana_health_care">
           <div className="projects-set-img">
             <img src={SaasDashboard} className="main-img" />
@@ -209,15 +223,15 @@ function Projects() {
             </section>
           </div>
         </Link>
-        <Link className="projects-set" to="/projects/save_life">
+        <Link className="projects-set" to="/projects/q_easy">
           <div className="projects-set-img">
-            <img src={SaveLife} className="main-img" />
-            <img src={SaveLifeBackgroundGlow} className="glow-img" />
+            <img src={QEasy} className="main-img" />
+            <img src={QEasyGlow} className="glow-img" />
           </div>
           <div className="projects-set-text">
             <p>Mobile Application</p>
             <section>
-              <h3>Save Life - Blood Donation</h3>
+              <h3>Q Easy</h3>
               <sub>2025</sub>
             </section>
           </div>
@@ -235,15 +249,15 @@ function Projects() {
             </section>
           </div>
         </Link>
-        <Link className="projects-set" to="/projects/q_easy">
+        <Link className="projects-set" to="/projects/save_life">
           <div className="projects-set-img">
-            <img src={QEasy} className="main-img" />
-            <img src={QEasyGlow} className="glow-img" />
+            <img src={SaveLife} className="main-img" />
+            <img src={SaveLifeBackgroundGlow} className="glow-img" />
           </div>
           <div className="projects-set-text">
             <p>Mobile Application</p>
             <section>
-              <h3>Q Easy</h3>
+              <h3>Save Life - Blood Donation</h3>
               <sub>2025</sub>
             </section>
           </div>

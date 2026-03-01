@@ -13,6 +13,7 @@ import MobileProjectVector from "../../asset/Home/Projects/MobileProjectVector.w
 import MobileProjectBlur from "../../asset/Home/Projects/MobileProjectBlur.webp"
 import SaasDashboard from "../../asset/Home/Projects/SaasDashboardPanel.webp";
 import SaasDashboardGlow from "../../asset/Home/Projects/DashboardBlur.webp";
+import FigmaDashboard from "../../asset/Home/Projects/FigmaDashboard.webp";
 import { motion } from "framer-motion";
 
 function Projects() {
@@ -40,7 +41,15 @@ function Projects() {
   const delay = (i) => ({ transitionDelay: `${200 + i * 120}ms` });
 
   const projectData = [
-  {
+    {
+        link: "/projects/figma_status_logs",
+        img: FigmaDashboard,
+        glow: SaasDashboardGlow,
+        title: "Figma - Status & Logs",
+        sub: "2026",
+        tag: "Website Design",
+    },
+    {
       link: "/projects/nirvana_health_care",
       img: SaasDashboard,
       glow: SaasDashboardGlow,
@@ -49,10 +58,10 @@ function Projects() {
       tag: "Saas Dashboard & Website Design",
     },
     {
-      link: "/projects/save_life",
-      img: SaveLife,
-      glow: SaveLifeBackgroundGlow,
-      title: "Save Life - Blood Donation",
+      link: "/projects/q_easy",
+      img: QEasy,
+      glow: QEasyGlow,
+      title: "Q Easy",
       sub: "2025",
       tag: "Mobile Application",
     },
@@ -65,10 +74,10 @@ function Projects() {
       tag: "Mobile Application",
     },
     {
-      link: "/projects/q_easy",
-      img: QEasy,
-      glow: QEasyGlow,
-      title: "Q Easy",
+      link: "/projects/save_life",
+      img: SaveLife,
+      glow: SaveLifeBackgroundGlow,
+      title: "Save Life - Blood Donation",
       sub: "2025",
       tag: "Mobile Application",
     },
