@@ -13,7 +13,11 @@ import overviewImage4 from "../../../asset/Projects/Page/FigmaStatusLogs/Overvie
 import overviewImage5 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage5.webp";
 import overviewImage6 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage6.webp";
 import overviewImage7 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage7.webp";
+import overviewImage8 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage8.webp";
+import overviewImage9 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage9.webp";
+import overviewImage10 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage10.webp";
 
+import statusMode from "../../../asset/Projects/Page/FigmaStatusLogs/StatusMode.webp";
 import BackgroundStars from "../../Backgroundsars"
 import OtherCaseStudies from "../../Home/OtherCaseStudies";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
@@ -723,6 +727,31 @@ function FigmaStatusLogs() {
               production, and PMs operate without live visibility into design progress
             </p>
           </div>
+        </div>
+
+        <div className="project-bento-container with-background">
+          <div className="inner-container">
+            <h3 className="inner-header">WIREFRAMES</h3>
+            <img src={overviewImage8} />
+            <img src={overviewImage9} />
+          </div>
+        </div>
+
+        <div className="project-bento-container with-background">
+          <div className="inner-container content-heading">
+            <h3>STATUS MODE</h3>
+            <img src={statusMode} />
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">WHAT IS STATUS MODE & WHY IT BECOMES CRUCIAL</h3>
+            <p className="inner-content">
+              Status is not a feature. It is the foundation of the entire system. Without status, nobody knows which frames need
+              attention, which are done, and which are blocked. With status, a designer scanning 100 frames at 10% zoom can
+              instantly read the health of an entire sprint. A PM can see progress without a meeting. A developer can filter to only
+              the frames they need to build.
+            </p>
+          </div>
+          <img src={overviewImage10} />
         </div>
       
       {/* <div className="project-bento">
