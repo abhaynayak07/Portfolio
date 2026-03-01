@@ -16,6 +16,7 @@ import overviewImage7 from "../../../asset/Projects/Page/FigmaStatusLogs/Overvie
 import overviewImage8 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage8.webp";
 import overviewImage9 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage9.webp";
 import overviewImage10 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage10.webp";
+import overviewImage11 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage11.webp";
 
 import statusMode from "../../../asset/Projects/Page/FigmaStatusLogs/StatusMode.webp";
 import BackgroundStars from "../../Backgroundsars"
@@ -752,6 +753,7 @@ function FigmaStatusLogs() {
             </p>
           </div>
           <img src={overviewImage10} />
+          <img src={overviewImage11} />
         </div>
       
       {/* <div className="project-bento">
