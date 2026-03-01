@@ -3457,7 +3457,7 @@ header nav {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
   border-radius: 16px;
   border: 1px solid #232323;
   background: linear-gradient(
@@ -3465,6 +3465,26 @@ header nav {
     rgba(25, 25, 25, 0.5) 0.78%,
     rgba(31, 31, 31, 0.5) 99.36%
   );
+}
+
+.inner-subcontainer{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inner-subcontainer h4{
+  color: #535353;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4%;
+}
+
+.inner-container p{
+  color: #CCCCCC;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -2%;
 }
 
 .inner-header{
@@ -3516,6 +3536,15 @@ header nav {
 }
 
 @media (max-width: 768px) {
+  .inner-container{
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .inner-image{
+    border-radius: 8px;
+  }
+
   .savelife-grid {
     grid-template-columns: 1fr;
   }

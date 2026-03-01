@@ -682,11 +682,32 @@ function FigmaStatusLogs() {
             </p>
           </div>
           <div className="inner-container">
-            <h3 className="inner-header">WHAT NEW fEATURES HAVE BEEN ADDED</h3>
+            <h3 className="inner-header">WHAT NEW FEATURES HAVE BEEN ADDED</h3>
             <img className="inner-image" src={overviewImage5} />
           </div>
           <div className="inner-container ">
             <img className="inner-image" src={overviewImage6} />
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">KEY RESEARCH FINDINGS</h3>
+            <div className="inner-subcontainer">
+              <h4 className="inner-subheader">DESIGNERS</h4>
+              <p className="inner-content">
+                Designers have no clear way to mark work as draft, in review, or blocked inside Figma, so developers rely on guessing / calls instead of an explicit status signal.
+              </p>
+            </div>
+            <div className="inner-subcontainer">
+              <h4 className="inner-subheader">DEVELOPERS ARE LOST</h4>
+              <p className="inner-content">
+                “We open figma spend 5-15 minutes figuring out which pages are built, shipped and which are yet to build.”
+              </p>
+            </div>
+            <div className="inner-subcontainer">
+              <h4 className="inner-subheader">PMS ARE COMPLETELY BLIND</h4>
+              <p className="inner-content">
+                PMs currently track design progress by pinging designers directly, scanning Figma comments, or waiting for a Notion board to be updated manually. There is no live progress view inside the tool where the work actually lives. Every PM described the same frustrating ritual opening Figma, seeing a collection of frames with no status information, and having to ask the designer for a status update.
+              </p>
+            </div>
           </div>
         </div>
       
