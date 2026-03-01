@@ -3482,7 +3482,7 @@ header nav {
 
 .inner-container p{
   color: #CCCCCC;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 28px;
   letter-spacing: -2%;
 }
@@ -3539,6 +3539,19 @@ header nav {
   .inner-container{
     padding: 10px;
     border-radius: 8px;
+  }
+
+  .inner-header{
+    font-size: 20px;
+  }
+
+  .inner-subcontainer h4{
+    font-size: 16px;
+  }
+
+  .inner-container p{
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .inner-image{

@@ -12,6 +12,7 @@ import overviewImage3 from "../../../asset/Projects/Page/FigmaStatusLogs/Overvie
 import overviewImage4 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage4.webp";
 import overviewImage5 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage5.webp";
 import overviewImage6 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage6.webp";
+import overviewImage7 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage7.webp";
 
 import BackgroundStars from "../../Backgroundsars"
 import OtherCaseStudies from "../../Home/OtherCaseStudies";
@@ -708,6 +709,19 @@ function FigmaStatusLogs() {
                 PMs currently track design progress by pinging designers directly, scanning Figma comments, or waiting for a Notion board to be updated manually. There is no live progress view inside the tool where the work actually lives. Every PM described the same frustrating ritual opening Figma, seeing a collection of frames with no status information, and having to ask the designer for a status update.
               </p>
             </div>
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">USER JOURNEY OF FRONTEND DEVELOPER (RISHABH)</h3>
+            <img className="inner-image" src={overviewImage7} />
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">DEFINED PROBLEM STATEMENT</h3>
+            <p className="inner-content">
+              Design and engineering teams using Figma lack a shared, in-file system to communicate 
+              frame readiness, design rationale, interaction behaviour, and technical data requirements 
+              creating a gap where context is lost, features are misbuilt, B2B edge cases surface in
+              production, and PMs operate without live visibility into design progress
+            </p>
           </div>
         </div>
       
