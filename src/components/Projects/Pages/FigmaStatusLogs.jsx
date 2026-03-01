@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import icon from "../../../asset/Projects/Page/Save Life/icon.webp";
-// import icon from "../../../asset/Projects/Page/FigmaStatusLogs/FigmaIcon.webp";
+import icon from "../../../asset/Projects/Page/FigmaStatusLogs/icon.webp";
 import banner from "../../../asset/Projects/Page/FigmaStatusLogs/banner.webp";
 import mobilebanner from "../../../asset/Projects/Page/FigmaStatusLogs/mobileBanner.webp";
 import toolused from "../../../asset/Projects/Page/Save Life/tool used.webp";
@@ -11,6 +10,8 @@ import overviewImage1 from "../../../asset/Projects/Page/FigmaStatusLogs/overvie
 import overviewImage2 from "../../../asset/Projects/Page/FigmaStatusLogs/overviewImage2.webp";
 import overviewImage3 from "../../../asset/Projects/Page/FigmaStatusLogs/overviewImage3.webp";
 import overviewImage4 from "../../../asset/Projects/Page/FigmaStatusLogs/overviewImage4.webp";
+import overviewImage5 from "../../../asset/Projects/Page/FigmaStatusLogs/overviewImage5.webp";
+
 import BackgroundStars from "../../Backgroundsars"
 import OtherCaseStudies from "../../Home/OtherCaseStudies";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
@@ -91,7 +92,7 @@ function FigmaStatusLogs() {
               <img
                 src={icon}
                 style={{
-                  boxShadow: "0px 2px 45px 0px #F46161",
+                  boxShadow: "0px 2px 45px 0px #0089E4",
                 }}
                 alt="Save Life Icon"
               />
@@ -679,19 +680,9 @@ function FigmaStatusLogs() {
               Each role experiences the handoff gap differently. Each has different pain, different workarounds, and a different definition of what a good handoff looks like.
             </p>
           </div>
-
           <div className="inner-container">
             <h3 className="inner-header">What NEW features HAVE BEEN addED</h3>
-            <p className="inner-content">
-              Before opening Figma, I spent two full weeks in pure discovery. The goal was not to validate a solution it was to
-              deeply understand the problem from three completely different perspectives:
-              <br/>1. the designer who creates,
-              <br/>2. the developer who builds, and
-              <br/>3. the PM who tracks.
-            </p>
-            <p className="inner-content">
-              Each role experiences the handoff gap differently. Each has different pain, different workarounds, and a different definition of what a good handoff looks like.
-            </p>
+            <img className="inner-image" src={overviewImage5} />
           </div>
         </div>
       
