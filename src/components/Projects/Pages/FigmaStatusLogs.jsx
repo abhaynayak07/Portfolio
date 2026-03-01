@@ -6,11 +6,11 @@ import banner from "../../../asset/Projects/Page/FigmaStatusLogs/banner.webp";
 import mobilebanner from "../../../asset/Projects/Page/FigmaStatusLogs/mobileBanner.webp";
 import toolused from "../../../asset/Projects/Page/Save Life/tool used.webp";
 import overviewimg from "../../../asset/Projects/Page/FigmaStatusLogs/overviewImg.webp";
-import overviewImage1 from "../../../asset/Projects/Page/FigmaStatusLogs/overviewImage1.webp";
-import overviewImage2 from "../../../asset/Projects/Page/FigmaStatusLogs/overviewImage2.webp";
-import overviewImage3 from "../../../asset/Projects/Page/FigmaStatusLogs/overviewImage3.webp";
-import overviewImage4 from "../../../asset/Projects/Page/FigmaStatusLogs/overviewImage4.webp";
-import overviewImage5 from "../../../asset/Projects/Page/FigmaStatusLogs/overviewImage5.webp";
+import overviewImage1 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage1.webp";
+import overviewImage2 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage2.webp";
+import overviewImage3 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage3.webp";
+import overviewImage4 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage4.webp";
+import overviewImage5 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage5.webp";
 
 import BackgroundStars from "../../Backgroundsars"
 import OtherCaseStudies from "../../Home/OtherCaseStudies";
