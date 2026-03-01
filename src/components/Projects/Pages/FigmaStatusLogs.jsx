@@ -11,6 +11,7 @@ import overviewImage2 from "../../../asset/Projects/Page/FigmaStatusLogs/Overvie
 import overviewImage3 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage3.webp";
 import overviewImage4 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage4.webp";
 import overviewImage5 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage5.webp";
+import overviewImage6 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage6.webp";
 
 import BackgroundStars from "../../Backgroundsars"
 import OtherCaseStudies from "../../Home/OtherCaseStudies";
@@ -668,7 +669,7 @@ function FigmaStatusLogs() {
 
         <div className="project-bento-container with-background">
           <div className="inner-container">
-            <h3 className="inner-header">Research Approach</h3>
+            <h3 className="inner-header">RESEARCH APPROACH</h3>
             <p className="inner-content">
               Before opening Figma, I spent two full weeks in pure discovery. The goal was not to validate a solution it was to
               deeply understand the problem from three completely different perspectives:
@@ -681,8 +682,11 @@ function FigmaStatusLogs() {
             </p>
           </div>
           <div className="inner-container">
-            <h3 className="inner-header">What NEW features HAVE BEEN addED</h3>
+            <h3 className="inner-header">WHAT NEW fEATURES HAVE BEEN ADDED</h3>
             <img className="inner-image" src={overviewImage5} />
+          </div>
+          <div className="inner-container ">
+            <img className="inner-image" src={overviewImage6} />
           </div>
         </div>
       

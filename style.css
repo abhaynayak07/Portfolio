@@ -3490,6 +3490,11 @@ header nav {
   border-radius: 16px;
 }
 
+/* .content-blocks{
+  display: flex;
+  justify-content: space-between;
+
+} */
 
 .savelife-grid {
   display: grid;
