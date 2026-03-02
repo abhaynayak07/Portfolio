@@ -205,7 +205,7 @@ function Projects() {
           <div className="projects-set-text">
             <p>Website Design</p>
             <section>
-              <h3>Figma - Status & Logs</h3>
+              <h3>Figma Workflow System - Status & Logs</h3>
               <sub>2026</sub>
             </section>
           </div>

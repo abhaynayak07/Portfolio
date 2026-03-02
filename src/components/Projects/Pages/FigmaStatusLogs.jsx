@@ -41,7 +41,7 @@ import overviewImage27 from "../../../asset/Projects/Page/FigmaStatusLogs/Overvi
 import overviewImage28 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage28.webp";
 import overviewImage29 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage29.webp";
 import overviewImage30 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage30.webp";
-import overviewImage31 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage31.webp";
+// import overviewImage31 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage31.webp";
 import overviewImage32 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage32.webp";
 import overviewImage33 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage33.webp";
 import overviewImage34 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage34.webp";
@@ -138,13 +138,13 @@ function FigmaStatusLogs() {
               <img
                 src={icon}
                 style={{
-                  boxShadow: "0px 2px 45px 0px #0089E4",
+                  boxShadow: "0px 2px 25px 0px #0089E4",
                 }}
                 alt="Save Life Icon"
               />
             </div>
             <div className="project-header-text">
-              <h2>Figma Status & Logs</h2>
+              <h2>Figma Workflow System - Status & Logs</h2>
               <div style={{display: "flex", gap: "5px"}}>
                 <p>Website Design</p>
                 <p>2026</p>
@@ -493,7 +493,7 @@ function FigmaStatusLogs() {
                     {[
                       { title: "Discovery & UX Research", days: "11 days" },
                       { title: "Journey Maps & Affinity  Mapping", days: "3 days" },
-                      { title: "Ideation, System Thining  & User Flows", days: "5 days" },
+                      { title: "Ideation, System Thinking  & User Flows", days: "5 days" },
                       { title: "Interaction Design", days: "3 days" },
                       { title: "Wireframes", days: "7 days" },
                       { title: "Interface Design", days: "7 days" }
@@ -886,7 +886,7 @@ function FigmaStatusLogs() {
             <img className="inner-image" src={overviewImage29} />
           </div>
           <img style={{borderRadius: "0px"}} src={overviewImage30} />
-          <img style={{borderRadius: "0px"}} src={overviewImage31} />
+          {/* <img style={{borderRadius: "0px"}} src={overviewImage31} /> */}
           <img className="design-mode" src={developMode} />
           <img style={{borderRadius: "0px"}} src={overviewImage32} />
           <img style={{borderRadius: "0px"}} src={overviewImage33} />

@@ -45,7 +45,7 @@ function Projects() {
         link: "/projects/figma_status_logs",
         img: FigmaDashboard,
         glow: SaasDashboardGlow,
-        title: "Figma - Status & Logs",
+        title: "Figma Workflow System - Status & Logs",
         sub: "2026",
         tag: "Website Design",
     },
