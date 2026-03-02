@@ -38,7 +38,7 @@ const GlobeExperiance = () => {
                 <span className="month prev">00</span>
                 <span className="month curr">01</span>
               </span>
-            </span> Months
+            </span> Month
           </h2>
           <p>AND GROWING</p>
         </div>
