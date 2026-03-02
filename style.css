@@ -3522,8 +3522,29 @@ header nav {
 .content-heading img{
   max-width: 350px;
   object-fit: contain;
+  border-radius: 0;
 }
 
+.inner-division{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.inner-division p{
+  max-width: 70%;
+}
+
+.design-mode{
+  padding: 20px 0;
+  max-width: 300px;
+}
+
+.inner-division img{
+  max-width: 130px;
+  object-fit: contain;
+  border-radius: 0;
+}
 /* .content-blocks{
   display: flex;
   justify-content: space-between;
@@ -3535,6 +3556,10 @@ header nav {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 20px;
+}
+
+.noborder {
+  border-radius: 0;
 }
 
 /* LEFT big image */
@@ -3550,6 +3575,17 @@ header nav {
 }
 
 @media (max-width: 768px) {
+
+  .inner-division{
+    max-width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .inner-division p{
+    max-width: 100%;
+  }
 
   .content-heading{
     display: flex;

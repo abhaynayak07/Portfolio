@@ -17,7 +17,16 @@ import overviewImage8 from "../../../asset/Projects/Page/FigmaStatusLogs/Overvie
 import overviewImage9 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage9.webp";
 import overviewImage10 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage10.webp";
 import overviewImage11 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage11.webp";
+import overviewImage12 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage12.webp";
+import overviewImage13 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage13.webp";
+import overviewImage14 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage14.webp";
+import overviewImage15 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage15.webp";
+import overviewImage16 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage16.webp";
+import overviewImage17 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage17.webp";
+import overviewImage18 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage18.webp";
 
+import designMode from "../../../asset/Projects/Page/FigmaStatusLogs/DesignMode.webp";
+import builtImage from "../../../asset/Projects/Page/FigmaStatusLogs/BuitImage.webp";
 import statusMode from "../../../asset/Projects/Page/FigmaStatusLogs/StatusMode.webp";
 import BackgroundStars from "../../Backgroundsars"
 import OtherCaseStudies from "../../Home/OtherCaseStudies";
@@ -754,6 +763,32 @@ function FigmaStatusLogs() {
           </div>
           <img src={overviewImage10} />
           <img src={overviewImage11} />
+          <div className="inner-container">
+            <h3 className="inner-header">BUILT VS SHIPPED - WHY TWO SEPERATE STATUSES</h3>
+            <div className="inner-division">
+              <p className="inner-content">
+                In a team of 20+, deployment and design QA are two different moments owned by two different people. The
+                developer knows when code goes to production. The designer knows when the live product actually matches what
+                was designed. These are not the same moment. Built means engineering is done. Shipped means everything is
+                verified. A PM seeing Built knows to expect design QA. A PM seeing Shipped knows the sprint item is truly closed.
+              </p>
+              <img src={builtImage} />
+            </div>
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">UI DESIGN</h3>
+            <p className="inner-content">
+              UI Design of Status Mode
+            </p>
+          </div>
+          <img className="design-mode" src={designMode} />
+          <img className="noborder" src={overviewImage12} />
+          <img className="noborder" src={overviewImage13} />
+          <img className="noborder" src={overviewImage14} />
+          <img className="noborder" src={overviewImage15} />
+          <img className="noborder" src={overviewImage16} />
+          <img className="noborder" src={overviewImage17} />
+          <img className="noborder" src={overviewImage18} />
         </div>
       
       {/* <div className="project-bento">
