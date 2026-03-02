@@ -17,15 +17,20 @@ import overviewImage8 from "../../../asset/Projects/Page/FigmaStatusLogs/Overvie
 import overviewImage9 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage9.webp";
 import overviewImage10 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage10.webp";
 import overviewImage11 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage11.webp";
+import overviewImage11mobile from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage11mobile.webp";
 import overviewImage12 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage12.webp";
 import overviewImage13 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage13.webp";
 import overviewImage14 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage14.webp";
+import overviewImage14mobile from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage14mobile.webp";
 import overviewImage15 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage15.webp";
 import overviewImage16 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage16.webp";
+import overviewImage16mobile from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage16mobile.webp";
 import overviewImage17 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage17.webp";
 import overviewImage18 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage18.webp";
+import overviewImage18mobile from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage18mobile.webp";
 import overviewImage19 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage19.webp";
 import overviewImage20 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage20.webp";
+import overviewImage20mobile from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage20mobile.webp";
 import overviewImage21 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage21.webp";
 import overviewImage22 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage22.webp";
 import overviewImage23 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage23.webp";
@@ -37,6 +42,13 @@ import overviewImage28 from "../../../asset/Projects/Page/FigmaStatusLogs/Overvi
 import overviewImage29 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage29.webp";
 import overviewImage30 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage30.webp";
 import overviewImage31 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage31.webp";
+import overviewImage32 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage32.webp";
+import overviewImage33 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage33.webp";
+import overviewImage34 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage34.webp";
+import overviewImage35 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage35.webp";
+import overviewImage36 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage36.webp";
+import overviewImage37 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage37.webp";
+import overviewImage38 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage38.webp";
 
 import tab1 from "../../../asset/Projects/Page/FigmaStatusLogs/tab1.webp";
 import tab2 from "../../../asset/Projects/Page/FigmaStatusLogs/tab2.webp";
@@ -691,13 +703,13 @@ function FigmaStatusLogs() {
         </motion.div>
         
         <div className="project-bento-container with-background">
-          <img src={overviewImage1} />
-          <img src={overviewImage2} />
-          <img src={overviewImage3} />
+          <img style={{borderRadius: "0px"}} src={overviewImage1} />
+          <img style={{borderRadius: "0px"}} src={overviewImage2} />
+          <img style={{borderRadius: "0px"}} src={overviewImage3} />
         </div>
 
         <div className="project-bento-container with-background">
-          <img src={overviewImage4} />
+          <img style={{borderRadius: "0px"}} src={overviewImage4} />
         </div>
 
         <div className="project-bento-container with-background">
@@ -716,10 +728,10 @@ function FigmaStatusLogs() {
           </div>
           <div className="inner-container">
             <h3 className="inner-header">WHAT NEW FEATURES HAVE BEEN ADDED</h3>
-            <img className="inner-image" src={overviewImage5} />
+            <img style={{borderRadius: "0px"}} className="inner-image" src={overviewImage5} />
           </div>
           <div className="inner-container ">
-            <img className="inner-image" src={overviewImage6} />
+            <img style={{borderRadius: "0px"}} className="inner-image" src={overviewImage6} />
           </div>
           <div className="inner-container">
             <h3 className="inner-header">KEY RESEARCH FINDINGS</h3>
@@ -744,7 +756,7 @@ function FigmaStatusLogs() {
           </div>
           <div className="inner-container">
             <h3 className="inner-header">USER JOURNEY OF FRONTEND DEVELOPER (RISHABH)</h3>
-            <img className="inner-image" src={overviewImage7} />
+            <img style={{borderRadius: "0px"}} className="inner-image" src={overviewImage7} />
           </div>
           <div className="inner-container">
             <h3 className="inner-header">DEFINED PROBLEM STATEMENT</h3>
@@ -760,8 +772,8 @@ function FigmaStatusLogs() {
         <div className="project-bento-container with-background">
           <div className="inner-container">
             <h3 className="inner-header">WIREFRAMES</h3>
-            <img src={overviewImage8} />
-            <img src={overviewImage9} />
+            <img style={{borderRadius: "0px"}} src={overviewImage8} />
+            <img style={{borderRadius: "0px"}} src={overviewImage9} />
           </div>
         </div>
 
@@ -779,8 +791,9 @@ function FigmaStatusLogs() {
               the frames they need to build.
             </p>
           </div>
-          <img src={overviewImage10} />
-          <img src={overviewImage11} />
+          <img style={{borderRadius: "0px"}} src={overviewImage10} />
+          <img style={{borderRadius: "0px"}} className="desktop" src={overviewImage11} />
+          <img style={{borderRadius: "0px"}} className="mobile" src={overviewImage11mobile} />
           <div className="inner-container">
             <h3 className="inner-header">BUILT VS SHIPPED - WHY TWO SEPERATE STATUSES</h3>
             <div className="inner-division">
@@ -800,18 +813,22 @@ function FigmaStatusLogs() {
             </p>
           </div>
           <img className="design-mode" src={designMode} />
-          <img className="noborder" src={overviewImage12} />
-          <img className="noborder" src={overviewImage13} />
-          <img className="noborder" src={overviewImage14} />
-          <img className="noborder" src={overviewImage15} />
-          <img className="noborder" src={overviewImage16} />
-          <img className="noborder" src={overviewImage17} />
-          <img className="noborder" src={overviewImage18} />
+          <img style={{borderRadius: "0px"}} src={overviewImage12} />
+          <img style={{borderRadius: "0px"}} src={overviewImage13} />
+          <img style={{borderRadius: "0px"}} className="noborder mobile" src={overviewImage14mobile} />
+          <img style={{borderRadius: "0px"}} className="noborder desktop" src={overviewImage14} />
+          <img style={{borderRadius: "0px"}} src={overviewImage15} />
+          <img style={{borderRadius: "0px"}} className="noborder desktop" src={overviewImage16} />
+          <img style={{borderRadius: "0px"}} className="noborder mobile" src={overviewImage16mobile} />
+          <img style={{borderRadius: "0px"}} src={overviewImage17} />
+          <img style={{borderRadius: "0px"}} className="noborder desktop" src={overviewImage18} />
+          <img style={{borderRadius: "0px"}} className="noborder mobile" src={overviewImage18mobile} />
           <img className="design-mode" src={developMode} />
-          <img className="noborder" src={overviewImage19} />
-          <img className="noborder" src={overviewImage20} />
-          <img className="noborder" src={overviewImage21} />
-          <img className="noborder" src={overviewImage22} />
+          <img style={{borderRadius: "0px"}} src={overviewImage19} />
+          <img style={{borderRadius: "0px"}} className="noborder desktop" src={overviewImage20} />
+          <img style={{borderRadius: "0px"}} className="noborder mobile" src={overviewImage20mobile} />
+          <img style={{borderRadius: "0px"}} src={overviewImage21} />
+          <img style={{borderRadius: "0px"}} src={overviewImage22} />
 
           <div className="inner-container content-heading">
             <h3>LOGS</h3>
@@ -832,7 +849,7 @@ function FigmaStatusLogs() {
             <h3 className="inner-header">WHAT NEW FEATURES HAVE BEEN ADDED</h3>
             <img className="inner-image" src={overviewImage23} />
           </div>
-          <img className="noborder" src={overviewImage24} />
+          <img style={{borderRadius: "0px"}} src={overviewImage24} />
           <div className="inner-container">
             <h3 className="inner-header">LOGS VS COMMENTS</h3>
             <img className="inner-image" src={overviewImage25} />
@@ -865,15 +882,50 @@ function FigmaStatusLogs() {
             </p>
           </div>
           <img className="design-mode" src={designMode} />
-          <img className="noborder" src={overviewImage26} />
-          <img className="noborder" src={overviewImage27} />
-          <img className="noborder" src={overviewImage28} />
+          <img style={{borderRadius: "0px"}} src={overviewImage26} />
+          <img style={{borderRadius: "0px"}} src={overviewImage27} />
+          <img style={{borderRadius: "0px"}} src={overviewImage28} />
           <div className="inner-container">
             <h3 className="inner-header">USER JOURNEY OF FRONTEND DEVELOPER (RISHABH)</h3>
             <img className="inner-image" src={overviewImage29} />
           </div>
-          <img className="noborder" src={overviewImage30} />
-          <img className="noborder" src={overviewImage31} />
+          <img style={{borderRadius: "0px"}} src={overviewImage30} />
+          <img style={{borderRadius: "0px"}} src={overviewImage31} />
+          <img className="design-mode" src={developMode} />
+          <img style={{borderRadius: "0px"}} src={overviewImage32} />
+          <img style={{borderRadius: "0px"}} src={overviewImage33} />
+          <img style={{borderRadius: "0px"}} src={overviewImage34} />
+          <img style={{borderRadius: "0px"}} src={overviewImage35} />
+          <img style={{borderRadius: "0px"}} src={overviewImage36} />
+
+          <div className="inner-container">
+            <h3 className="inner-header">WHY SHOW/HIDE LOGS IS IN DIFFERENT PLACES FOR DIFFERENT ROLES</h3>
+            <p className="inner-content">
+              In Design Mode the designer hides logs frequently during client presentations, stakeholder reviews, design
+              critiques. It needs to be one click away a permanent eye icon.
+            </p>
+            <p className="inner-content">
+              In Developer Mode the developer hides logs
+              rarely maybe once a sprint. It lives inside the kebab menu. Frequency of use determines placement. Same rule
+              Figma uses for all its own controls
+            </p>
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">KEYBOARD SHORTCUTS</h3>
+            <img className="inner-image" src={overviewImage37} />
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">WHAT I LEARNT </h3>
+            <p className="inner-content">
+              The handoff problem is not a Figma problem. It is a communication problem that Figma has been asked to solve without any communication tools. Figma is a drawing tool that has been forced to act as a specification document and a project tracker simultaneously. This feature gives Figma the communication layer it was always missing  without changing how Figma works for anyone who does not want to use it.
+            </p>
+            <p className="inner-content">
+              The most important lesson: the best thing a designer can do for a developer is make the file so complete and so
+              clear that they never have to open Slack to ask a question. That is the goal. That is the north star of this entire
+              feature.
+            </p>
+          </div>
+          <img style={{borderRadius: "0px"}} src={overviewImage38} />
         </div>
       
       {/* <div className="project-bento">
