@@ -48,7 +48,7 @@ function Banner() {
             {/* Heading Animation */}
             <motion.div className="home-banner-scroll-text" variants={item}>
               <h1>
-                You Next Designer <br /> Awaits
+                Your Next Designer <br /> Awaits
               </h1>
             </motion.div>
 

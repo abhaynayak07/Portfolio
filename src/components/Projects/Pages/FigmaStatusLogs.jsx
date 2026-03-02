@@ -49,7 +49,7 @@ import overviewImage35 from "../../../asset/Projects/Page/FigmaStatusLogs/Overvi
 import overviewImage36 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage36.webp";
 import overviewImage37 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage37.webp";
 import overviewImage38 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage38.webp";
-
+import table from "../../../asset/Projects/Page/FigmaStatusLogs/Table.png";
 import tab1 from "../../../asset/Projects/Page/FigmaStatusLogs/tab1.webp";
 import tab2 from "../../../asset/Projects/Page/FigmaStatusLogs/tab2.webp";
 import tab3 from "../../../asset/Projects/Page/FigmaStatusLogs/tab3.webp";
@@ -715,13 +715,9 @@ function FigmaStatusLogs() {
         <div className="project-bento-container with-background">
           <div className="inner-container">
             <h3 className="inner-header">RESEARCH APPROACH</h3>
-            <p className="inner-content">
-              Before opening Figma, I spent two full weeks in pure discovery. The goal was not to validate a solution it was to
-              deeply understand the problem from three completely different perspectives:
-              <br/>1. the designer who creates,
-              <br/>2. the developer who builds, and
-              <br/>3. the PM who tracks.
-            </p>
+            <p className="inner-content">Before opening Figma, I spent two full weeks in pure discovery. The goal was not to validate a solution it was to
+ deeply understand the problem from three completely different perspectives:</p>
+            <img style={{borderRadius: "0px"}} className="inner-image" src={table} />
             <p className="inner-content">
               Each role experiences the handoff gap differently. Each has different pain, different workarounds, and a different definition of what a good handoff looks like.
             </p>
@@ -738,13 +734,13 @@ function FigmaStatusLogs() {
             <div className="inner-subcontainer">
               <h4 className="inner-subheader">DESIGNERS</h4>
               <p className="inner-content">
-                Designers have no clear way to mark work as draft, in review, or blocked inside Figma, so developers rely on guessing / calls instead of an explicit status signal.
+                “When multiple designers work on the same Figma file, there’s no clear way to mark the status of a page whether it’s in draft, under review, or blocked. Because nothing is explicitly marked or recorded, we end up depending on calls or messages. There’s also no place to leave context for developers, so they have to rely on separate communication channels.”
               </p>
             </div>
             <div className="inner-subcontainer">
               <h4 className="inner-subheader">DEVELOPERS ARE LOST</h4>
               <p className="inner-content">
-                “We open figma spend 5-15 minutes figuring out which pages are built, shipped and which are yet to build.”
+                “There’s no way for designers to log context, behavior, or data requirements directly in Figma. To understand a screen, we have to check other tools, messages, or notebooks. This causes 10–15 minutes of context switching and multiple tool hops every day, and it becomes even harder when a new developer joins the project.”
               </p>
             </div>
             <div className="inner-subcontainer">

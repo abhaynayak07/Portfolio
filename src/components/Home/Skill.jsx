@@ -28,7 +28,7 @@ const tools = [
   "Figma",
   "Figjam",
   "Figma Make",
-  "Balasmiq",
+  "Balsamiq",
   "Miro",
   "UX Pilot",
   "Design Systems",
@@ -118,7 +118,7 @@ const Skill = () => {
         </div>
       </div>
       <div className="skills-block">
-        <h4 className="skill-category-title">Tools</h4>
+        <h4 className="skill-category-title">Design Tools & Methods</h4>
 
         <div className="industries-list">
           {tools.map((item, idx) => (
