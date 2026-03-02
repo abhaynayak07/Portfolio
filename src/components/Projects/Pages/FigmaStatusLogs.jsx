@@ -24,8 +24,26 @@ import overviewImage15 from "../../../asset/Projects/Page/FigmaStatusLogs/Overvi
 import overviewImage16 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage16.webp";
 import overviewImage17 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage17.webp";
 import overviewImage18 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage18.webp";
+import overviewImage19 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage19.webp";
+import overviewImage20 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage20.webp";
+import overviewImage21 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage21.webp";
+import overviewImage22 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage22.webp";
+import overviewImage23 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage23.webp";
+import overviewImage24 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage24.webp";
+import overviewImage25 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage25.webp";
+import overviewImage26 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage26.webp";
+import overviewImage27 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage27.webp";
+import overviewImage28 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage28.webp";
+import overviewImage29 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage29.webp";
+import overviewImage30 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage30.webp";
+import overviewImage31 from "../../../asset/Projects/Page/FigmaStatusLogs/OverviewImage31.webp";
 
+import tab1 from "../../../asset/Projects/Page/FigmaStatusLogs/tab1.webp";
+import tab2 from "../../../asset/Projects/Page/FigmaStatusLogs/tab2.webp";
+import tab3 from "../../../asset/Projects/Page/FigmaStatusLogs/tab3.webp";
+import Logs from "../../../asset/Projects/Page/FigmaStatusLogs/Logs.webp";
 import designMode from "../../../asset/Projects/Page/FigmaStatusLogs/DesignMode.webp";
+import developMode from "../../../asset/Projects/Page/FigmaStatusLogs/DevelopMode.webp";
 import builtImage from "../../../asset/Projects/Page/FigmaStatusLogs/BuitImage.webp";
 import statusMode from "../../../asset/Projects/Page/FigmaStatusLogs/StatusMode.webp";
 import BackgroundStars from "../../Backgroundsars"
@@ -789,6 +807,73 @@ function FigmaStatusLogs() {
           <img className="noborder" src={overviewImage16} />
           <img className="noborder" src={overviewImage17} />
           <img className="noborder" src={overviewImage18} />
+          <img className="design-mode" src={developMode} />
+          <img className="noborder" src={overviewImage19} />
+          <img className="noborder" src={overviewImage20} />
+          <img className="noborder" src={overviewImage21} />
+          <img className="noborder" src={overviewImage22} />
+
+          <div className="inner-container content-heading">
+            <h3>LOGS</h3>
+            <img src={Logs} />
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">WHY LOGS EXIST</h3>
+            <p className="inner-content">
+              Every tool for specs requires the developer to leave Figma. Confluence is a separate tab. Notion is a separate tab (sometimes smaller teams use WhatsApp messages)
+              The developer opens Figma, sees a component, has a question, leaves Figma, searches Confluence, comes back.
+              That context switch happens 8 to 12 times per day. Each switch costs 3 to 5 minutes of mental reorientation. Sometimes there will be new hirings in the company, features get visited after 3 months and nobody remembers why the decision was made.
+            </p>
+            <p className="inner-content">
+              Logs closes that gap permanently. The spec lives on the component it describes. The developer never leaves Figma.
+            </p>
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">WHAT NEW FEATURES HAVE BEEN ADDED</h3>
+            <img className="inner-image" src={overviewImage23} />
+          </div>
+          <img className="noborder" src={overviewImage24} />
+          <div className="inner-container">
+            <h3 className="inner-header">LOGS VS COMMENTS</h3>
+            <img className="inner-image" src={overviewImage25} />
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">SO WHAT ARE THEASE 3 TABS AND WHY IT EXISTS?</h3>
+            <img className="inner-image" src={tab1} />
+            <img className="inner-image" src={tab2} />
+            <img className="inner-image" src={tab3} />
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">KEY RESEARCH FINDINGS</h3>
+            <div className="inner-subcontainer">
+              <h4 className="inner-subheader">DESIGNERS PAIN POINT</h4>
+              <p className="inner-content">
+                “We design it. We explain it in a call. They build it wrong anyway. Something is broken in the process."
+              </p>
+            </div>
+            <div className="inner-subcontainer">
+              <h4 className="inner-subheader">DEVELOPERS PAIN POINT</h4>
+              <p className="inner-content">
+                Developers can see how a component looks in Figma but have no way to know how it should behave, what data it depends on, or which edge cases to handle without asking the designer.
+              </p>
+            </div>
+          </div>
+          <div className="inner-container">
+            <h3 className="inner-header">UI DESIGN</h3>
+            <p className="inner-content">
+              UI Design of Logs
+            </p>
+          </div>
+          <img className="design-mode" src={designMode} />
+          <img className="noborder" src={overviewImage26} />
+          <img className="noborder" src={overviewImage27} />
+          <img className="noborder" src={overviewImage28} />
+          <div className="inner-container">
+            <h3 className="inner-header">USER JOURNEY OF FRONTEND DEVELOPER (RISHABH)</h3>
+            <img className="inner-image" src={overviewImage29} />
+          </div>
+          <img className="noborder" src={overviewImage30} />
+          <img className="noborder" src={overviewImage31} />
         </div>
       
       {/* <div className="project-bento">
