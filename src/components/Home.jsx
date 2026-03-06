@@ -26,9 +26,9 @@ function Home() {
       </Helmet>
       <BackgroundStars /> 
       <Banner />
+      <Projects />
       <Experiences />
       <GlobeExperiance />
-      <Projects />
       <Skill/>
       {/* <Skills /> */}
       {/* <Marquee /> */}
