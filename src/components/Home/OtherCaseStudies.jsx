@@ -19,6 +19,7 @@ import GoogleClassroomBackgroundGlow from "../../asset/Home/Projects/Google Clas
 import OtherProjectsMobileBackground from "../../asset/Home/OtherProjects/OtherProjectsobileBackground.webp";
 import ArrowFwd from "../../asset/Home/OtherProjects/arrow_forward.webp";
 import ArrowBwd from "../../asset/Home/OtherProjects/arrow_backward.webp";
+import EnterpriseLocationIntelligence from "../../asset/Projects/ProjectsList/EnterpriseLocationIntelligence.webp";
 const OtherCaseStudies = ({ currentProject }) => {
     const container = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.25 } } };
     const item = { hidden: { opacity: 0, y: 20, filter: "blur(10px)" }, show: { opacity: 1, y: 0, filter: "blur(0px)", transition: { duration: 0.8, ease: "easeOut" } } };
@@ -28,8 +29,17 @@ const OtherCaseStudies = ({ currentProject }) => {
         el.scrollBy({ left: amount, behavior: "smooth" });
     };
 
-    const projects = [
-        {
+  const projects = [
+    {
+      id: "enterpriselocationintelligence",
+      link: "/projects/enterprise_location_intelligence",
+      title: "Enterprise Location Intelligence",
+      year: "2026",
+      type: "Web Application",
+      img: EnterpriseLocationIntelligence,
+      glow: NirvanaHealthCareBackgroundGlow,
+    },
+    {
         id: "nirvanahealth",
         link: "/projects/nirvana_health_care",
         title: "Nirvana Health Care",

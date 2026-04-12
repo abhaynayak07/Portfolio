@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import EnterpriseLocationIntelligence from "../../asset/Projects/ProjectsList/EnterpriseLocationIntelligence.webp";
 import SchoolMate from "../../asset/Home/Projects/School Mate.webp";
 import SchoolMateGlow from "../../asset/Home/Projects/School Mate Background Glow.webp";
 import QEasy from "../../asset/Home/Projects/Q Easy.webp";
@@ -42,12 +43,20 @@ function Projects() {
 
   const projectData = [
     {
+      link: "/projects/enterprise_location_intelligence",
+      img: EnterpriseLocationIntelligence,
+      glow: SaasDashboardGlow,
+      title: "Enterprise Location Intelligence",
+      sub: "2026",
+      tag: "Design Assignment | Enterprise UX | Systems Thinking",
+    },
+    {
         link: "/projects/figma_status_logs",
         img: FigmaDashboard,
         glow: SaasDashboardGlow,
         title: "Figma Workflow System - Status & Logs",
         sub: "2026",
-        tag: "Website Design",
+      tag: "Systems Thinking | Enterprise UX | User research",
     },
     {
       link: "/projects/nirvana_health_care",
@@ -55,7 +64,7 @@ function Projects() {
       glow: SaasDashboardGlow,
       title: "Nirvaana Health Cares",
       sub: "2025",
-      tag: "Saas Dashboard & Website Design",
+      tag: "Systems Thinking | Enterprise UX | Dashboard",
     },
     {
       link: "/projects/q_easy",
@@ -63,7 +72,7 @@ function Projects() {
       glow: QEasyGlow,
       title: "Q Easy",
       sub: "2025",
-      tag: "Mobile Application",
+      tag: "Public Service UX | Mobile Application",
     },
     {
       link: "/projects/school_mate",
@@ -71,7 +80,7 @@ function Projects() {
       glow: SchoolMateGlow,
       title: "School Mate",
       sub: "2025",
-      tag: "Mobile Application",
+      tag: "Public Service UX | Mobile Application",
     },
     {
       link: "/projects/save_life",
@@ -79,7 +88,7 @@ function Projects() {
       glow: SaveLifeBackgroundGlow,
       title: "Save Life - Blood Donation",
       sub: "2025",
-      tag: "Mobile Application",
+      tag: "Public Service UX | Mobile Application",
     },
   ];
 

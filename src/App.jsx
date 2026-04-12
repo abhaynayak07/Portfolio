@@ -22,6 +22,7 @@ import OlliePets from "./components/Projects/Pages/OlliePets";
 import SaveLife from "./components/Projects/Pages/SaveLife";
 import NirvanHealth from "./components/Projects/Pages/NirvanaHealthCare";
 import FigmaStatusLogs from "./components/Projects/Pages/FigmaStatusLogs";
+import EnterpriseLocationIntelligence from "./components/Projects/Pages/EnterpriseLocationIntelligence";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="projects" element={<Projects />} />
+            <Route path="projects/enterprise_location_intelligence" element={<EnterpriseLocationIntelligence />} />
             <Route path="projects/nirvana_health_care" element={<NirvanHealth />} />
             <Route path="projects/figma_status_logs" element={<FigmaStatusLogs />} />
             <Route path="projects/school_mate" element={<SchoolMate />} />

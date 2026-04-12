@@ -2,6 +2,7 @@
 
 import { Link } from "react-router-dom";
 import SchoolMate from "../../asset/Projects/ProjectsList/School Mate.webp";
+import EnterpriseLocationIntelligence from "../../asset/Projects/ProjectsList/EnterpriseLocationIntelligence.webp";
 import SchoolMateGlow from "../../asset/Projects/ProjectsList/School Mate Background Glow.webp";
 import QEasy from "../../asset/Projects/ProjectsList/Q Easy.webp";
 import QEasyGlow from "../../asset/Projects/ProjectsList/Q Easy Background Glow.webp";
@@ -197,13 +198,26 @@ function Projects() {
       </div>
     </div>
       <div className="projects-container">
+        <Link className="projects-set" to="/projects/enterprise_location_intelligence">
+          <div className="projects-set-img">
+            <img src={EnterpriseLocationIntelligence} className="main-img" />
+            <img src={SaasDashboardGlow} className="glow-img" />
+          </div>
+          <div className="projects-set-text">
+            <p>Design Assignment | Enterprise UX | Systems Thinking</p>
+            <section>
+              <h3>Enterprise Location Intelligence</h3>
+              <sub>2026</sub>
+            </section>
+          </div>
+        </Link>
         <Link className="projects-set" to="/projects/figma_status_logs">
           <div className="projects-set-img">
             <img src={FigmaDashboard} className="main-img" />
             <img src={SaasDashboardGlow} className="glow-img" />
           </div>
           <div className="projects-set-text">
-            <p>Website Design</p>
+            <p>Systems Thinking | Enterprise UX | User research</p>
             <section>
               <h3>Figma Workflow System - Status & Logs</h3>
               <sub>2026</sub>
@@ -216,7 +230,7 @@ function Projects() {
             <img src={SaasDashboardGlow} className="glow-img" />
           </div>
           <div className="projects-set-text">
-            <p>Saas Dashboard & Website Design</p>
+            <p>Systems Thinking | Enterprise UX | Dashboard</p>
             <section>
               <h3>Nirvaana Health Cares</h3>
               <sub>2025</sub>
@@ -229,7 +243,7 @@ function Projects() {
             <img src={QEasyGlow} className="glow-img" />
           </div>
           <div className="projects-set-text">
-            <p>Mobile Application</p>
+            <p>Public Service UX | Mobile Application</p>
             <section>
               <h3>Q Easy</h3>
               <sub>2025</sub>
@@ -242,7 +256,7 @@ function Projects() {
             <img src={SchoolMateGlow} className="glow-img" />
           </div>
           <div className="projects-set-text">
-            <p>Mobile Application</p>
+            <p>Public Service UX | Mobile Application</p>
             <section>
               <h3>School Mate</h3>
               <sub>2025</sub>
@@ -255,7 +269,7 @@ function Projects() {
             <img src={SaveLifeBackgroundGlow} className="glow-img" />
           </div>
           <div className="projects-set-text">
-            <p>Mobile Application</p>
+            <p>Public Service UX | Mobile Application</p>
             <section>
               <h3>Save Life - Blood Donation</h3>
               <sub>2025</sub>
