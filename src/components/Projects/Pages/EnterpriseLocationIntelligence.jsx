@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import icon from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/icon.webp";
 import banner from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/banner.webp";
-import mobilebanner from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/banner.webp";
+import mobilebanner from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/Banner.webp";
 import toolused from "../../../asset/Projects/Page/Save Life/tool used.webp";
 import overviewimg from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/overviewImage.png";
 import overviewImage1 from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/OverviewImage1.webp";
