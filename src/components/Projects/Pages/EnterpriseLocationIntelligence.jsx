@@ -5,7 +5,7 @@ import icon from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/ic
 import banner from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/BannerImage.webp";
 import mobilebanner from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/BannerImage.webp";
 import toolused from "../../../asset/Projects/Page/Save Life/tool used.webp";
-import overviewimg from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/overviewImage.png";
+import overviewimg from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/OverviewImage.png";
 import overviewImage1 from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/OverviewImage1.webp";
 import overviewImage2 from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/OverviewImage2.webp";
 import overviewImage3 from "../../../asset/Projects/Page/EnterpriseLocationIntelligence/OverviewImage3.webp";
